@@ -2,13 +2,13 @@ import { Map, Grid3x3, Tag, MapPin, Star, TrendingUp } from "lucide-react";
 
 export function Discovery() {
   return (
-    <section id="descoberta" className="py-32 lg:py-48 bg-gradient-to-b from-white via-[#fafbfc] to-white">
+    <section id="descoberta" className="py-32 lg:py-24 bg-gradient-to-b from-white via-[#fafbfc] to-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="max-w-4xl mx-auto text-center mb-24 lg:mb-32">
-          <div className="inline-flex items-center gap-2.5 px-6 py-2.5 bg-white backdrop-blur-sm rounded-full border border-primary/20 shadow-sm shadow-primary/5 mb-10">
+        <div className="max-w-4xl mx-auto text-center mb-24 lg:mb-20">
+          <div className="inline-flex items-center gap-2.5 px-6 py-2.5 bg-white backdrop-blur-sm rounded-full border border-primary/20 shadow-sm shadow-primary/5 mb-6">
             <span className="text-sm text-primary font-bold tracking-tight">Descoberta inteligente</span>
           </div>
-          <h2 className="text-[2.75rem] lg:text-[3.75rem] font-bold text-foreground mb-7 leading-[1.05] tracking-[-0.02em]">
+          <h2 className="text-[2.75rem] lg:text-[2.75rem] font-bold text-foreground mb-5 leading-[1.05] tracking-[-0.02em]">
             Encontre o creator ideal<br />de <span className="text-primary">3 formas diferentes</span>
           </h2>
           <p className="text-[1.1rem] lg:text-[1.3rem] text-muted-foreground leading-[1.7] max-w-2xl mx-auto">
@@ -20,15 +20,15 @@ export function Discovery() {
           {/* Map Discovery */}
           <div className="group relative bg-white rounded-[1.75rem] border border-border/50 hover:border-primary/30 transition-all duration-500 overflow-hidden hover:shadow-2xl hover:shadow-black/5">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-primary/3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="relative p-9 lg:p-11">
-              <div className="w-[4.5rem] h-[4.5rem] rounded-[1.25rem] bg-gradient-to-br from-primary/15 to-primary/8 flex items-center justify-center mb-7 group-hover:scale-105 transition-transform duration-500 shadow-sm shadow-primary/10">
+            <div className="relative p-9 lg:p-8">
+              <div className="w-[4.5rem] h-[4.5rem] rounded-[1.25rem] bg-gradient-to-br from-primary/15 to-primary/8 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-500 shadow-sm shadow-primary/10">
                 <Map className="w-9 h-9 text-primary" strokeWidth={2.3} />
               </div>
               <h3 className="text-[1.65rem] font-bold text-foreground mb-4 tracking-tight leading-tight">Mapa regional</h3>
-              <p className="text-muted-foreground mb-8 leading-[1.7] text-[0.95rem]">
+              <p className="text-muted-foreground mb-5 leading-[1.7] text-[0.95rem]">
                 Visualize creators próximos ao seu negócio em um mapa interativo. Filtre por distância e descubra talentos na sua região.
               </p>
-              <div className="space-y-3.5 mb-8">
+              <div className="space-y-3.5 mb-5">
                 <div className="flex items-center gap-3 text-sm font-semibold text-foreground/90">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                   <span>Busca por localização exata</span>
@@ -65,15 +65,15 @@ export function Discovery() {
           {/* Marketplace Discovery */}
           <div className="group relative bg-white rounded-[1.75rem] border border-border/50 hover:border-primary/30 transition-all duration-500 overflow-hidden hover:shadow-2xl hover:shadow-black/5">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-primary/3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="relative p-9 lg:p-11">
-              <div className="w-[4.5rem] h-[4.5rem] rounded-[1.25rem] bg-gradient-to-br from-primary/15 to-primary/8 flex items-center justify-center mb-7 group-hover:scale-105 transition-transform duration-500 shadow-sm shadow-primary/10">
+            <div className="relative p-9 lg:p-8">
+              <div className="w-[4.5rem] h-[4.5rem] rounded-[1.25rem] bg-gradient-to-br from-primary/15 to-primary/8 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-500 shadow-sm shadow-primary/10">
                 <Grid3x3 className="w-9 h-9 text-primary" strokeWidth={2.3} />
               </div>
               <h3 className="text-[1.65rem] font-bold text-foreground mb-4 tracking-tight leading-tight">Marketplace completo</h3>
-              <p className="text-muted-foreground mb-8 leading-[1.7] text-[0.95rem]">
+              <p className="text-muted-foreground mb-5 leading-[1.7] text-[0.95rem]">
                 Navegue por todos os creators com filtros avançados de categoria, formato de conteúdo e localização.
               </p>
-              <div className="space-y-3.5 mb-8">
+              <div className="space-y-3.5 mb-5">
                 <div className="flex items-center gap-3 text-sm font-semibold text-foreground/90">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                   <span>Filtros por categoria e nicho</span>
@@ -109,15 +109,15 @@ export function Discovery() {
           {/* Category Discovery */}
           <div className="group relative bg-white rounded-[1.75rem] border border-border/50 hover:border-primary/30 transition-all duration-500 overflow-hidden hover:shadow-2xl hover:shadow-black/5">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-primary/3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="relative p-9 lg:p-11">
-              <div className="w-[4.5rem] h-[4.5rem] rounded-[1.25rem] bg-gradient-to-br from-primary/15 to-primary/8 flex items-center justify-center mb-7 group-hover:scale-105 transition-transform duration-500 shadow-sm shadow-primary/10">
+            <div className="relative p-9 lg:p-8">
+              <div className="w-[4.5rem] h-[4.5rem] rounded-[1.25rem] bg-gradient-to-br from-primary/15 to-primary/8 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-500 shadow-sm shadow-primary/10">
                 <Tag className="w-9 h-9 text-primary" strokeWidth={2.3} />
               </div>
               <h3 className="text-[1.65rem] font-bold text-foreground mb-4 tracking-tight leading-tight">Busca por categoria</h3>
-              <p className="text-muted-foreground mb-8 leading-[1.7] text-[0.95rem]">
+              <p className="text-muted-foreground mb-5 leading-[1.7] text-[0.95rem]">
                 Explore creators organizados por nicho de mercado. De food a tech, encontre especialistas no seu segmento.
               </p>
-              <div className="space-y-3.5 mb-8">
+              <div className="space-y-3.5 mb-5">
                 <div className="flex items-center gap-3 text-sm font-semibold text-foreground/90">
                   <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                   <span>15+ categorias especializadas</span>

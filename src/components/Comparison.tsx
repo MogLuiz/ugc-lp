@@ -35,13 +35,13 @@ const comparisons = [
 
 export function Comparison() {
   return (
-    <section className="py-32 lg:py-48 bg-gradient-to-b from-white via-[#fafbfc] to-white">
+    <section className="py-32 lg:py-24 bg-gradient-to-b from-white via-[#fafbfc] to-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="max-w-4xl mx-auto text-center mb-24 lg:mb-32">
-          <div className="inline-flex items-center gap-2.5 px-6 py-2.5 bg-white backdrop-blur-sm rounded-full border border-primary/20 shadow-sm shadow-primary/5 mb-10">
+        <div className="max-w-4xl mx-auto text-center mb-24 lg:mb-20">
+          <div className="inline-flex items-center gap-2.5 px-6 py-2.5 bg-white backdrop-blur-sm rounded-full border border-primary/20 shadow-sm shadow-primary/5 mb-6">
             <span className="text-sm text-primary font-bold tracking-tight">Por que UGC Local?</span>
           </div>
-          <h2 className="text-[2.75rem] lg:text-[3.75rem] font-bold text-foreground mb-7 leading-[1.05] tracking-[-0.02em]">
+          <h2 className="text-[2.75rem] lg:text-[2.75rem] font-bold text-foreground mb-5 leading-[1.05] tracking-[-0.02em]">
             Mais simples que buscar <span className="text-primary">no direct</span>
           </h2>
           <p className="text-[1.1rem] lg:text-[1.3rem] text-muted-foreground leading-[1.7] max-w-2xl mx-auto">
@@ -78,7 +78,7 @@ export function Comparison() {
                   }`}
                 >
                   {/* Feature name — visible on all breakpoints */}
-                  <h3 className="font-bold text-foreground text-[0.9375rem] md:text-[1.0625rem] px-0 md:px-7 lg:px-9 py-0 md:py-7 lg:py-9 tracking-tight border-b md:border-b-0 border-border/30 pb-3 mb-3 md:pb-0 md:mb-0">
+                  <h3 className="font-bold text-foreground text-[0.9375rem] md:text-[1.0625rem] px-0 md:px-7 lg:px-8 py-0 md:py-7 lg:py-6 tracking-tight border-b md:border-b-0 border-border/30 pb-3 mb-3 md:pb-0 md:mb-0">
                     {item.feature}
                   </h3>
                   {/* Mobile: side-by-side comparison */}
@@ -97,7 +97,7 @@ export function Comparison() {
                     </div>
                   </div>
                   {/* Desktop: 3-column grid (inner) */}
-                  <div className="hidden md:grid md:grid-cols-2 gap-8 px-7 lg:px-9 py-7 lg:py-9">
+                  <div className="hidden md:grid md:grid-cols-2 gap-8 px-7 lg:px-8 py-7 lg:py-6">
                     <div className="flex items-start gap-3.5">
                       <div className="w-6 h-6 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0 mt-0.5">
                         <X className="w-4 h-4 text-red-500" strokeWidth={2.5} />

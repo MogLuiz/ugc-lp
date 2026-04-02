@@ -41,13 +41,13 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <section id="beneficios" className="py-32 lg:py-48 bg-gradient-to-b from-white via-[#fafbfc] to-white">
+    <section id="beneficios" className="py-32 lg:py-24 bg-gradient-to-b from-white via-[#fafbfc] to-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="max-w-4xl mx-auto text-center mb-24 lg:mb-32">
-          <div className="inline-flex items-center gap-2.5 px-6 py-2.5 bg-white backdrop-blur-sm rounded-full border border-primary/20 shadow-sm shadow-primary/5 mb-10">
+        <div className="max-w-4xl mx-auto text-center mb-24 lg:mb-20">
+          <div className="inline-flex items-center gap-2.5 px-6 py-2.5 bg-white backdrop-blur-sm rounded-full border border-primary/20 shadow-sm shadow-primary/5 mb-6">
             <span className="text-sm text-primary font-bold tracking-tight">Experiência profissional</span>
           </div>
-          <h2 className="text-[2.75rem] lg:text-[3.75rem] font-bold text-foreground mb-7 leading-[1.05] tracking-[-0.02em]">
+          <h2 className="text-[2.75rem] lg:text-[2.75rem] font-bold text-foreground mb-5 leading-[1.05] tracking-[-0.02em]">
             Muito mais que <span className="text-primary">encontrar creators</span>
           </h2>
           <p className="text-[1.1rem] lg:text-[1.3rem] text-muted-foreground leading-[1.7] max-w-2xl mx-auto">
@@ -59,13 +59,13 @@ export function Benefits() {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className={`group p-9 lg:p-10 rounded-[1.75rem] border transition-all duration-500 hover:shadow-2xl hover:shadow-black/5 ${
+              className={`group p-9 lg:p-8 rounded-[1.75rem] border transition-all duration-500 hover:shadow-2xl hover:shadow-black/5 ${
                 benefit.highlight
                   ? "bg-gradient-to-br from-white to-accent/40 border-primary/25 hover:border-primary/40"
                   : "bg-white border-border/50 hover:border-primary/30"
               }`}
             >
-              <div className="w-[4.5rem] h-[4.5rem] rounded-[1.25rem] bg-gradient-to-br from-primary/15 to-primary/8 flex items-center justify-center mb-7 group-hover:scale-105 transition-transform duration-500 shadow-sm shadow-primary/10">
+              <div className="w-[4.5rem] h-[4.5rem] rounded-[1.25rem] bg-gradient-to-br from-primary/15 to-primary/8 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-500 shadow-sm shadow-primary/10">
                 <benefit.icon className="w-9 h-9 text-primary" strokeWidth={2.3} />
               </div>
               <h3 className="text-[1.375rem] font-bold text-foreground mb-4 tracking-tight leading-tight">

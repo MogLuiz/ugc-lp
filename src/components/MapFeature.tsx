@@ -2,14 +2,14 @@ import { MapPin, Zap, Target } from "lucide-react";
 
 export function MapFeature() {
   return (
-    <section className="py-28 lg:py-40 bg-gradient-to-br from-primary via-[#7C3AED] to-[#8B5CF6] relative overflow-hidden">
+    <section className="py-28 lg:py-20 bg-gradient-to-br from-primary via-[#7C3AED] to-[#8B5CF6] relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-white rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-white rounded-full blur-3xl" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative">
-        <div className="text-center mb-20">
+        <div className="text-center mb-14">
           <div className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 mb-8">
             <Zap className="w-4 h-4 text-white" strokeWidth={2.5} />
             <span className="text-sm text-white font-semibold tracking-tight">O grande diferencial</span>

@@ -2,28 +2,28 @@ import { MapPin, Calendar, Users, Clock, Sparkles } from "lucide-react";
 
 export function LocalCreators() {
   return (
-    <section className="py-32 lg:py-48 bg-gradient-to-b from-white via-[#fafbfc] to-white relative overflow-hidden">
+    <section className="py-32 lg:py-24 bg-gradient-to-b from-white via-[#fafbfc] to-white relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(107,70,193,0.03),transparent_50%)]" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-16 items-center">
           {/* Left - Content */}
-          <div className="space-y-12">
+          <div className="space-y-12 lg:space-y-8">
             <div className="inline-flex items-center gap-2.5 px-6 py-2.5 bg-white rounded-full border border-primary/20 shadow-sm shadow-primary/5">
               <span className="text-sm text-primary font-bold tracking-tight">Creators presenciais</span>
             </div>
 
-            <div className="space-y-7">
-              <h2 className="text-[2.75rem] lg:text-[3.75rem] font-bold text-foreground leading-[1.05] tracking-[-0.02em]">
-                Creators locais vão até o seu <span className="text-primary">estabelecimento</span>
+            <div className="space-y-7 lg:space-y-5">
+              <h2 className="text-[2.75rem] lg:text-[2.75rem] font-bold text-foreground leading-[1.05] tracking-[-0.02em]">
+                Creators locais vão<br className="hidden lg:block" /> até o seu <span className="text-primary">estabelecimento</span>
               </h2>
-              <p className="text-[1.1rem] lg:text-[1.3rem] text-muted-foreground leading-[1.7] max-w-xl">
+              <p className="text-[1.1rem] lg:text-[1.15rem] text-muted-foreground leading-[1.7] max-w-xl">
                 Contrate creators da sua região para gravarem conteúdo diretamente no seu negócio. Eles conhecem a cidade, chegam rápido e entendem o contexto local.
               </p>
             </div>
 
             <div className="space-y-5">
-              <div className="flex items-start gap-5 p-7 lg:p-8 bg-white rounded-[1.5rem] border border-border/50 shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300 group">
+              <div className="flex items-start gap-5 p-7 lg:p-6 bg-white rounded-[1.5rem] border border-border/50 shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300 group">
                 <div className="w-[3.75rem] h-[3.75rem] rounded-[1.125rem] bg-gradient-to-br from-primary/15 to-primary/8 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform shadow-sm shadow-primary/10">
                   <MapPin className="w-7 h-7 text-primary" strokeWidth={2.3} />
                 </div>
@@ -35,7 +35,7 @@ export function LocalCreators() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-5 p-7 lg:p-8 bg-gradient-to-br from-white to-accent/30 rounded-[1.5rem] border border-primary/20 shadow-sm hover:shadow-lg hover:border-primary/40 transition-all duration-300 group">
+              <div className="flex items-start gap-5 p-7 lg:p-6 bg-gradient-to-br from-white to-accent/30 rounded-[1.5rem] border border-primary/20 shadow-sm hover:shadow-lg hover:border-primary/40 transition-all duration-300 group">
                 <div className="w-[3.75rem] h-[3.75rem] rounded-[1.125rem] bg-gradient-to-br from-primary/15 to-primary/8 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform shadow-sm shadow-primary/10">
                   <Calendar className="w-7 h-7 text-primary" strokeWidth={2.3} />
                 </div>
@@ -47,7 +47,7 @@ export function LocalCreators() {
                 </div>
               </div>
 
-              <div className="flex items-start gap-5 p-7 lg:p-8 bg-white rounded-[1.5rem] border border-border/50 shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300 group">
+              <div className="flex items-start gap-5 p-7 lg:p-6 bg-white rounded-[1.5rem] border border-border/50 shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300 group">
                 <div className="w-[3.75rem] h-[3.75rem] rounded-[1.125rem] bg-gradient-to-br from-primary/15 to-primary/8 flex items-center justify-center flex-shrink-0 group-hover:scale-105 transition-transform shadow-sm shadow-primary/10">
                   <Sparkles className="w-7 h-7 text-primary" strokeWidth={2.3} />
                 </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { siteConfig } from "@/lib/config";
 import "./globals.css";
 
 const inter = Inter({
@@ -10,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ugclocal.com.br"),
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: "UGC Local — Encontre Creators da Sua Região",
     template: "%s | UGC Local",
@@ -59,30 +60,30 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://ugclocal.com.br",
+    canonical: siteConfig.url,
   },
 };
 
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "UGC Local",
-  url: "https://ugclocal.com.br",
-  logo: "https://ugclocal.com.br/og-image.png",
+  name: siteConfig.name,
+  url: siteConfig.url,
+  logo: `${siteConfig.url}/og-image.png`,
   description:
     "Plataforma que conecta empresas a creators locais para produção de conteúdo presencial e digital.",
   sameAs: [
-    "https://instagram.com/ugclocal",
-    "https://linkedin.com/company/ugclocal",
-    "https://twitter.com/ugclocal",
+    siteConfig.social.instagram,
+    siteConfig.social.linkedin,
+    siteConfig.social.twitter,
   ],
 };
 
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "UGC Local",
-  url: "https://ugclocal.com.br",
+  name: siteConfig.name,
+  url: siteConfig.url,
   description:
     "Descubra creators próximos ao seu negócio no mapa interativo. Contrate para conteúdo presencial ou digital.",
   inLanguage: "pt-BR",

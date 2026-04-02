@@ -2,6 +2,7 @@
 
 import { Plus, Minus } from "lucide-react";
 import { useState } from "react";
+import { siteConfig } from "@/lib/config";
 
 const faqs = [
   {
@@ -42,13 +43,13 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-24 lg:py-32 bg-gradient-to-br from-accent/20 via-white to-accent/30">
+    <section id="faq" className="py-24 lg:py-20 bg-gradient-to-br from-accent/20 via-white to-accent/30">
       <div className="max-w-4xl mx-auto px-6 lg:px-12">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-primary/10 shadow-sm mb-6">
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-primary/10 shadow-sm mb-4">
             <span className="text-sm text-primary font-medium">Perguntas frequentes</span>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-6 leading-tight">
+          <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4 leading-tight">
             Dúvidas sobre a <span className="text-primary">plataforma</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
@@ -90,12 +91,12 @@ export function FAQ() {
           <h3 className="text-xl font-bold text-foreground mb-3">Ainda tem dúvidas?</h3>
           <p className="text-muted-foreground mb-6">Nossa equipe está pronta para ajudar você a começar</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <button className="px-6 py-3 bg-primary text-white rounded-xl hover:bg-primary/90 transition-colors font-semibold">
+            <a href={siteConfig.links.suporte} className="px-6 py-3 bg-primary text-white rounded-xl hover:bg-primary/90 transition-colors font-semibold text-center">
               Falar com suporte
-            </button>
-            <button className="px-6 py-3 bg-white border border-border text-foreground rounded-xl hover:border-primary/30 hover:bg-accent transition-colors font-semibold">
+            </a>
+            <a href={siteConfig.links.demo} className="px-6 py-3 bg-white border border-border text-foreground rounded-xl hover:border-primary/30 hover:bg-accent transition-colors font-semibold text-center">
               Agendar demonstração
-            </button>
+            </a>
           </div>
         </div>
       </div>
