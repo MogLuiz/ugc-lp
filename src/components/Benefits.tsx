@@ -4,37 +4,37 @@ const benefits = [
   {
     icon: FileText,
     title: "Propostas organizadas",
-    description: "Receba propostas detalhadas de creators com portfólio, preços e prazos claros. Sem negociação por DM.",
+    description: "Receba propostas com portfólio, valores e prazos mais claros, sem negociação espalhada.",
     highlight: false,
   },
   {
     icon: MessageSquare,
     title: "Chat integrado",
-    description: "Converse com creators, tire dúvidas e alinhe briefing direto na plataforma de forma profissional.",
+    description: "Converse, alinhe briefing e centralize a comunicação em um só lugar.",
     highlight: true,
   },
   {
     icon: CreditCard,
     title: "Pagamento seguro",
-    description: "Transações protegidas pela plataforma com termos claros. Você só paga após aprovar o conteúdo.",
+    description: "Pague com mais segurança e só aprove o repasse após validar o conteúdo.",
     highlight: false,
   },
   {
     icon: Shield,
     title: "Creators verificados",
-    description: "Todos os perfis são validados. Veja avaliações reais de outras empresas que já contrataram.",
+    description: "Veja perfis validados, avaliações reais e histórico antes de contratar.",
     highlight: false,
   },
   {
     icon: Clock,
     title: "Gestão de prazos",
-    description: "Acompanhe o progresso dos projetos com sistema de entregas, revisões e aprovações estruturado.",
+    description: "Acompanhe entregas, revisões e aprovações com mais controle.",
     highlight: true,
   },
   {
     icon: TrendingUp,
     title: "Histórico e métricas",
-    description: "Acesse todo histórico de conteúdos criados, performance e relatórios de resultados em um só lugar.",
+    description: "Acesse conteúdos, histórico e resultados sem perder informação no processo.",
     highlight: false,
   },
 ];
@@ -44,14 +44,15 @@ export function Benefits() {
     <section id="beneficios" className="py-32 lg:py-24 bg-gradient-to-b from-white via-[#fafbfc] to-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="max-w-4xl mx-auto text-center mb-24 lg:mb-20">
-          <div className="inline-flex items-center gap-2.5 px-6 py-2.5 bg-white backdrop-blur-sm rounded-full border border-primary/20 shadow-sm shadow-primary/5 mb-6">
-            <span className="text-sm text-primary font-bold tracking-tight">Experiência profissional</span>
+          <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-white backdrop-blur-sm rounded-full border border-primary/20 shadow-sm shadow-primary/5 mb-6">
+            <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+            <span className="text-sm text-primary font-semibold tracking-tight">Plataforma completa</span>
           </div>
           <h2 className="text-[2.75rem] lg:text-[2.75rem] font-bold text-foreground mb-5 leading-[1.05] tracking-[-0.02em]">
-            Muito mais que <span className="text-primary">encontrar creators</span>
+            Tudo para contratar e gerenciar<br className="hidden lg:block" /> creators <span className="text-primary">em um só lugar</span>
           </h2>
-          <p className="text-[1.1rem] lg:text-[1.3rem] text-muted-foreground leading-[1.7] max-w-2xl mx-auto">
-            Uma plataforma completa para gerenciar todo o processo de criação de conteúdo com creators locais
+          <p className="text-[1.05rem] lg:text-[1.1rem] text-muted-foreground leading-[1.75] max-w-xl mx-auto">
+            Centralize propostas, briefing, pagamentos, aprovações e resultados em uma operação mais organizada.
           </p>
         </div>
 
