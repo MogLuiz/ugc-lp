@@ -107,12 +107,15 @@ export function MapMockup() {
         <div className="bg-white/95 backdrop-blur-lg rounded-2xl shadow-lg shadow-black/[0.04] border border-border/40 p-3.5">
           <div className="flex items-center gap-3">
             <Search className="w-4.5 h-4.5 text-muted-foreground flex-shrink-0" strokeWidth={2} />
+            <label htmlFor="map-search" className="sr-only">Buscar creators próximos</label>
             <input
+              id="map-search"
               type="text"
               placeholder="Buscar creators próximos"
               className="flex-1 text-sm font-medium outline-none bg-transparent placeholder:text-muted-foreground/60"
               defaultValue="São Paulo, Centro"
               readOnly
+              aria-label="Buscar creators próximos"
             />
             <button className="p-2 hover:bg-accent/50 rounded-lg transition-colors" aria-label="Filtros">
               <SlidersHorizontal className="w-4 h-4 text-foreground/70" strokeWidth={2} />

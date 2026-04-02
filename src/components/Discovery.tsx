@@ -16,7 +16,7 @@ export function Discovery() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-7 lg:gap-9">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-9">
           {/* Map Discovery */}
           <div className="group relative bg-white rounded-[1.75rem] border border-border/50 hover:border-primary/30 transition-all duration-500 overflow-hidden hover:shadow-2xl hover:shadow-black/5">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-primary/3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

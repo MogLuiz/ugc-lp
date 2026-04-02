@@ -118,7 +118,7 @@ export function LocalCreators() {
               </div>
             </div>
 
-            <div className="absolute -top-5 -right-5 bg-white rounded-[1.125rem] shadow-2xl shadow-black/10 border border-border/50 p-5">
+            <div className="absolute -top-5 right-0 sm:-right-5 bg-white rounded-[1.125rem] shadow-2xl shadow-black/10 border border-border/50 p-5">
               <div className="flex items-center gap-2.5">
                 <div className="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse shadow-lg shadow-green-500/50" />
                 <span className="text-sm font-bold text-foreground tracking-tight">Em tempo real</span>

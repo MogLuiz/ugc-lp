@@ -36,10 +36,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Quanto custa contratar um creator?",
+      name: "Qual a diferença entre conteúdo presencial e digital?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Os valores variam de acordo com o tipo de conteúdo, alcance do creator e complexidade do projeto. Geralmente entre R$ 250 e R$ 800 por conteúdo. Você vê o preço antes de contratar e não paga taxas mensais, apenas pelo que usar.",
+        text: "Conteúdo presencial é quando o creator vai até o seu estabelecimento para gravar (restaurante, loja, academia). Conteúdo digital é quando o creator cria o material remotamente, como análise de produtos que você envia ou conteúdo sobre sua marca sem necessidade de visita.",
       },
     },
     {
@@ -52,10 +52,34 @@ const faqSchema = {
     },
     {
       "@type": "Question",
+      name: "Quanto custa contratar um creator?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Os valores variam de acordo com o tipo de conteúdo, alcance do creator e complexidade do projeto. Geralmente entre R$ 250 e R$ 800 por conteúdo. Você vê o preço antes de contratar e não paga taxas mensais, apenas pelo que usar.",
+      },
+    },
+    {
+      "@type": "Question",
       name: "Como funciona o pagamento?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "O pagamento é feito pela plataforma de forma segura. Você paga apenas após receber e aprovar o conteúdo. Aceitamos cartão de crédito, boleto e PIX. A plataforma retém o valor e só repassa ao creator após sua aprovação.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "E se eu não gostar do conteúdo?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Todo projeto tem direito a revisões conforme acordado no briefing. Se ainda assim não ficar satisfeito, você pode solicitar mediação da plataforma antes de aprovar o pagamento. Seu investimento está protegido.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Posso contratar o mesmo creator várias vezes?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sim! Você pode criar parcerias recorrentes com creators que funcionaram bem. Muitas empresas mantêm creators fixos para conteúdo mensal, mantendo a consistência da comunicação.",
       },
     },
     {

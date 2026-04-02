@@ -74,20 +74,18 @@ export function Hero() {
             </div>
 
             {/* Social Proof */}
-            <div className="flex items-center gap-10 pt-8 border-t border-border/60">
+            <div className="grid grid-cols-3 gap-4 pt-8 border-t border-border/60">
               <div>
-                <div className="text-[1.75rem] font-bold text-foreground tracking-tight">2.500+</div>
-                <div className="text-sm text-muted-foreground mt-0.5">Creators ativos</div>
+                <div className="text-[1.375rem] sm:text-[1.75rem] font-bold text-foreground tracking-tight">2.500+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-0.5">Creators ativos</div>
               </div>
-              <div className="w-px h-14 bg-border/60" />
-              <div>
-                <div className="text-[1.75rem] font-bold text-foreground tracking-tight">850+</div>
-                <div className="text-sm text-muted-foreground mt-0.5">Empresas usando</div>
+              <div className="border-l border-border/60 pl-4 sm:pl-6">
+                <div className="text-[1.375rem] sm:text-[1.75rem] font-bold text-foreground tracking-tight">850+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-0.5">Empresas usando</div>
               </div>
-              <div className="w-px h-14 bg-border/60" />
-              <div>
-                <div className="text-[1.75rem] font-bold text-foreground tracking-tight">15k+</div>
-                <div className="text-sm text-muted-foreground mt-0.5">Conteúdos criados</div>
+              <div className="border-l border-border/60 pl-4 sm:pl-6">
+                <div className="text-[1.375rem] sm:text-[1.75rem] font-bold text-foreground tracking-tight">15k+</div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-0.5">Conteúdos criados</div>
               </div>
             </div>
           </div>
