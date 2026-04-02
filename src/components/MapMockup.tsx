@@ -39,8 +39,8 @@ export function MapMockup() {
       />
 
       {/* 4. Search bar */}
-      <div className="absolute top-4 left-4 right-4 z-20">
-        <div className="bg-white/95 backdrop-blur-xl rounded-2xl border border-border/25 shadow-md px-3.5 py-1.5 flex items-center gap-2.5">
+      <div className="absolute top-3 lg:top-4 left-3 lg:left-4 right-3 lg:right-4 z-20">
+        <div className="bg-white/95 backdrop-blur-xl rounded-2xl border border-border/25 shadow-md px-3 lg:px-3.5 py-1 lg:py-1.5 flex items-center gap-2 lg:gap-2.5">
           <Search className="w-4 h-4 text-muted-foreground/70 flex-shrink-0" strokeWidth={2} />
           <label htmlFor="map-search" className="sr-only">Buscar creators próximos</label>
           <input
@@ -92,17 +92,17 @@ export function MapMockup() {
       </div>
 
       {/* 6. Creator info card */}
-      <div className="absolute bottom-4 left-4 right-4 z-30">
-        <div className="bg-white/95 backdrop-blur-xl rounded-2xl border border-border/20 shadow-xl p-2.5">
+      <div className="absolute bottom-3 lg:bottom-4 left-3 lg:left-4 right-3 lg:right-4 z-30">
+        <div className="bg-white/95 backdrop-blur-xl rounded-2xl border border-border/20 shadow-xl p-2 lg:p-2.5">
 
           {/* Creator row */}
-          <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl overflow-hidden flex-shrink-0 border border-border/15">
+          <div className="flex items-center gap-2 lg:gap-2.5">
+            <div className="w-8 h-8 lg:w-9 lg:h-9 rounded-xl overflow-hidden flex-shrink-0 border border-border/15">
               <Image
                 src={creator.image}
                 alt={creator.name}
-                width={36}
-                height={36}
+                width={32}
+                height={32}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -135,7 +135,7 @@ export function MapMockup() {
           </div>
 
           {/* CTA */}
-          <button className="w-full mt-2 py-1.5 bg-primary text-white text-sm font-semibold rounded-xl hover:bg-primary/90 transition-colors shadow-sm shadow-primary/15">
+          <button className="w-full mt-1.5 py-1 lg:py-1.5 bg-primary text-white text-xs lg:text-sm font-semibold rounded-xl hover:bg-primary/90 transition-colors shadow-sm shadow-primary/15">
             Ver perfil completo
           </button>
 

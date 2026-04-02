@@ -9,12 +9,12 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-b border-border/60 shadow-sm shadow-black/5">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 lg:h-16 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-primary to-[#8B5CF6] flex items-center justify-center shadow-lg shadow-primary/25">
-            <MapPin className="w-5 h-5 text-white" strokeWidth={2.5} />
+      <div className="max-w-7xl mx-auto px-4 lg:px-12 h-14 lg:h-16 flex items-center justify-between">
+        <div className="flex items-center gap-2 lg:gap-3">
+          <div className="w-8 h-8 lg:w-11 lg:h-11 rounded-lg lg:rounded-xl bg-gradient-to-br from-primary to-[#8B5CF6] flex items-center justify-center shadow-md shadow-primary/20 lg:shadow-lg lg:shadow-primary/25">
+            <MapPin className="w-4 h-4 lg:w-5 lg:h-5 text-white" strokeWidth={2.5} />
           </div>
-          <span className="text-xl font-bold tracking-tight">UGC Local</span>
+          <span className="text-[0.9375rem] lg:text-xl font-bold tracking-tight">UGC Local</span>
         </div>
 
         {/* Desktop nav */}
@@ -33,11 +33,11 @@ export function Header() {
           </a>
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 lg:gap-3">
           <a href={siteConfig.links.creators} className="hidden md:block text-sm font-semibold px-5 py-2.5 text-foreground hover:bg-accent rounded-xl transition-colors">
             Sou creator
           </a>
-          <a href={siteConfig.links.empresas} className="text-sm font-semibold px-5 py-2.5 bg-primary text-primary-foreground rounded-xl hover:bg-primary/90 transition-all shadow-md shadow-primary/20">
+          <a href={siteConfig.links.empresas} className="text-xs lg:text-sm font-semibold px-3.5 py-2 lg:px-5 lg:py-2.5 bg-primary text-primary-foreground rounded-xl hover:bg-primary/90 transition-all shadow-md shadow-primary/20">
             Para empresas
           </a>
           {/* Mobile hamburger */}

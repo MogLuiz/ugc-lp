@@ -4,7 +4,7 @@ import { MapMockup } from "./MapMockup";
 
 export function Hero() {
   return (
-    <section className="relative pt-28 pb-16 lg:pt-28 lg:pb-20 overflow-hidden">
+    <section className="relative pt-24 pb-16 lg:pt-28 lg:pb-20 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-primary/8 rounded-full blur-3xl" />
@@ -88,7 +88,7 @@ export function Hero() {
 
           {/* Right Column - Map Mockup */}
           <div className="relative">
-            <div className="aspect-[4/3] lg:aspect-[5/4] relative">
+            <div className="aspect-[1/1] lg:aspect-[5/4] relative">
               <MapMockup />
             </div>
           </div>
