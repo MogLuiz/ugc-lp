@@ -79,7 +79,7 @@ export function FAQ() {
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full p-5 lg:p-6 flex items-center justify-between gap-4 text-left hover:bg-accent/30 transition-colors"
-                aria-expanded={true}
+                aria-expanded={index === openIndex}
               >
                 <span className="font-semibold text-foreground text-[1rem] lg:text-lg pr-4">
                   {faq.question}
@@ -93,8 +93,8 @@ export function FAQ() {
                 </div>
               </button>
 
-              {true && (
-                <div className="px-5 pb-5 lg:px-6 lg:pb-6 animate-in slide-in-from-top-2 duration-200">
+              {index === openIndex && (
+                <div className="px-6 pb-6 animate-in slide-in-from-top-2 duration-200">
                   <p className="text-muted-foreground leading-relaxed">
                     {faq.answer}
                   </p>
@@ -104,7 +104,7 @@ export function FAQ() {
           ))}
         </div>
 
-        <div className="mt-10 p-6 lg:p-8 bg-gradient-to-br from-primary/5 to-purple-500/5 rounded-2xl border border-primary/20 text-center">
+        <div className="mt-12 p-8 bg-gradient-to-br from-primary/5 to-purple-500/5 rounded-2xl border border-primary/20 text-center">
           <h3 className="text-xl font-bold text-foreground mb-3">
             Ainda tem dúvidas?
           </h3>
