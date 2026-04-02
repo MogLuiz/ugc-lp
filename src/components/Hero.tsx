@@ -88,7 +88,7 @@ export function Hero() {
 
           {/* Right Column - Map Mockup */}
           <div className="relative">
-            <div className="aspect-[4/5] lg:aspect-[4/3] relative">
+            <div className="aspect-[4/5] lg:aspect-[5/4] relative">
               <MapMockup />
             </div>
           </div>
