@@ -13,7 +13,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "UGC Local — Encontre Creators da Sua Região",
+    default: "UGC Local",
     template: "%s | UGC Local",
   },
   description:

@@ -1,219 +1,236 @@
 import Image from "next/image";
-import { Search, SlidersHorizontal, MapPin, Star, Share2, Video, Camera } from "lucide-react";
+import { Search, SlidersHorizontal, MapPin, Star } from "lucide-react";
 
-const creators = [
+const creator = {
+  name: "Ana Silva",
+  category: "Food & Lifestyle",
+  rating: 4.9,
+  reviews: 127,
+  distance: "1.2 km",
+  price: "R$ 350",
+  image: "/images/creators/ana.jpg",
+};
+
+const secondaryPins = [
   {
-    id: 1,
-    name: "Ana Silva",
-    category: "Food & Lifestyle",
-    rating: 4.9,
-    reviews: 127,
-    distance: "1.2 km",
-    price: "R$ 350",
-    image: "/images/creators/ana.jpg",
-    position: { x: "52%", y: "45%" },
-    selected: true,
-  },
-  {
-    id: 2,
     name: "Pedro Costa",
-    category: "Tech & Gadgets",
-    rating: 4.8,
-    reviews: 94,
-    distance: "2.8 km",
-    price: "R$ 400",
     image: "/images/creators/pedro.jpg",
-    position: { x: "38%", y: "58%" },
+    left: "26%",
+    top: "30%",
   },
   {
-    id: 3,
     name: "Julia Martins",
-    category: "Fashion & Beauty",
-    rating: 5.0,
-    reviews: 215,
-    distance: "0.8 km",
-    price: "R$ 500",
     image: "/images/creators/julia.jpg",
-    position: { x: "65%", y: "32%" },
+    left: "74%",
+    top: "60%",
   },
 ];
 
 export function MapMockup() {
-  const selectedCreator = creators.find((c) => c.selected);
-
   return (
-    <div className="relative w-full h-full rounded-3xl overflow-hidden shadow-2xl shadow-black/8 border border-border/30 bg-white">
-      {/* Map Background */}
-      <div className="absolute inset-0 bg-[#f0ede6]">
-        <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="parkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#a7f3d0" stopOpacity="0.85" />
-              <stop offset="100%" stopColor="#6ee7b7" stopOpacity="0.75" />
-            </linearGradient>
-            <linearGradient id="riverGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#93c5fd" stopOpacity="0.7" />
-              <stop offset="50%" stopColor="#60a5fa" stopOpacity="0.8" />
-              <stop offset="100%" stopColor="#93c5fd" stopOpacity="0.7" />
-            </linearGradient>
-            <linearGradient id="commercialGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#e9d5ff" stopOpacity="0.5" />
-              <stop offset="100%" stopColor="#d8b4fe" stopOpacity="0.4" />
-            </linearGradient>
-            <pattern id="residentialPattern" width="80" height="80" patternUnits="userSpaceOnUse">
-              <rect x="0" y="0" width="38" height="38" fill="#fef3c7" opacity="0.6" />
-              <rect x="42" y="0" width="38" height="38" fill="#fce7f3" opacity="0.5" />
-              <rect x="0" y="42" width="38" height="38" fill="#f3e8ff" opacity="0.5" />
-              <rect x="42" y="42" width="38" height="38" fill="#dfe9f5" opacity="0.6" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#residentialPattern)" />
-          <ellipse cx="15%" cy="15%" rx="12%" ry="15%" fill="url(#parkGradient)" opacity="0.95" />
-          <rect x="8%" y="72%" width="30%" height="20%" fill="url(#parkGradient)" rx="12" opacity="0.9" />
-          <ellipse cx="78%" cy="20%" rx="10%" ry="12%" fill="url(#parkGradient)" opacity="0.85" />
-          <path d="M 0 25 Q 25 30, 40 38 T 75 48 T 100 52" fill="none" stroke="url(#riverGradient)" strokeWidth="18" opacity="0.85" strokeLinecap="round" />
-          <path d="M 0 25 Q 25 30, 40 38 T 75 48 T 100 52" fill="none" stroke="#bfdbfe" strokeWidth="26" opacity="0.4" strokeLinecap="round" />
-          <rect x="40%" y="38%" width="28%" height="28%" fill="url(#commercialGradient)" rx="8" opacity="0.7" />
-          <line x1="0" y1="22%" x2="100%" y2="22%" stroke="#c9b8a0" strokeWidth="3" opacity="0.7" />
-          <line x1="0" y1="45%" x2="100%" y2="45%" stroke="#c9b8a0" strokeWidth="2.5" opacity="0.65" />
-          <line x1="0" y1="68%" x2="100%" y2="68%" stroke="#c9b8a0" strokeWidth="3" opacity="0.7" />
-          <line x1="0" y1="85%" x2="100%" y2="85%" stroke="#c9b8a0" strokeWidth="2" opacity="0.6" />
-          <line x1="25%" y1="0" x2="25%" y2="100%" stroke="#c9b8a0" strokeWidth="2.5" opacity="0.65" />
-          <line x1="45%" y1="0" x2="45%" y2="100%" stroke="#c9b8a0" strokeWidth="3" opacity="0.7" />
-          <line x1="65%" y1="0" x2="65%" y2="100%" stroke="#c9b8a0" strokeWidth="2.5" opacity="0.65" />
-          <line x1="82%" y1="0" x2="82%" y2="100%" stroke="#c9b8a0" strokeWidth="2" opacity="0.6" />
-          <line x1="0" y1="12%" x2="100%" y2="12%" stroke="#d4c4b0" strokeWidth="1.5" opacity="0.5" />
-          <line x1="0" y1="33%" x2="100%" y2="33%" stroke="#d4c4b0" strokeWidth="1.5" opacity="0.5" />
-          <line x1="0" y1="56%" x2="100%" y2="56%" stroke="#d4c4b0" strokeWidth="1.5" opacity="0.5" />
-          <line x1="0" y1="78%" x2="100%" y2="78%" stroke="#d4c4b0" strokeWidth="1.5" opacity="0.5" />
-          <line x1="0" y1="92%" x2="100%" y2="92%" stroke="#d4c4b0" strokeWidth="1.5" opacity="0.5" />
-          <line x1="12%" y1="0" x2="12%" y2="100%" stroke="#d4c4b0" strokeWidth="1.5" opacity="0.5" />
-          <line x1="35%" y1="0" x2="35%" y2="100%" stroke="#d4c4b0" strokeWidth="1.5" opacity="0.5" />
-          <line x1="55%" y1="0" x2="55%" y2="100%" stroke="#d4c4b0" strokeWidth="1.5" opacity="0.5" />
-          <line x1="73%" y1="0" x2="73%" y2="100%" stroke="#d4c4b0" strokeWidth="1.5" opacity="0.5" />
-          <line x1="90%" y1="0" x2="90%" y2="100%" stroke="#d4c4b0" strokeWidth="1.5" opacity="0.5" />
-          <rect x="48%" y="44%" width="4" height="4" fill="#9333ea" opacity="0.25" rx="0.5" />
-          <rect x="58%" y="50%" width="4" height="4" fill="#9333ea" opacity="0.25" rx="0.5" />
-          <rect x="52%" y="56%" width="4" height="4" fill="#9333ea" opacity="0.25" rx="0.5" />
-          <rect x="42%" y="48%" width="3" height="3" fill="#9333ea" opacity="0.2" rx="0.5" />
-          <rect x="62%" y="46%" width="3" height="3" fill="#9333ea" opacity="0.2" rx="0.5" />
-          <rect x="55%" y="60%" width="3" height="3" fill="#9333ea" opacity="0.2" rx="0.5" />
-          <rect x="42%" y="36%" width="3%" height="6%" fill="#b8a99a" opacity="0.6" rx="1" />
-        </svg>
-      </div>
+    <div className="relative w-full h-full rounded-3xl overflow-hidden border border-border/20 shadow-2xl shadow-black/10 bg-[#f0edf8]">
+      {/* 1. Map background */}
+      <Image
+        src="/images/creators/map-background.png"
+        fill
+        className="object-cover"
+        alt="Mapa de creators locais"
+        priority
+        sizes="(max-width: 1024px) 100vw, 50vw"
+      />
 
-      {/* Search Bar */}
-      <div className="absolute top-5 left-5 right-5 z-20">
-        <div className="bg-white/95 backdrop-blur-lg rounded-2xl shadow-lg shadow-black/[0.04] border border-border/40 p-3.5">
-          <div className="flex items-center gap-3">
-            <Search className="w-4.5 h-4.5 text-muted-foreground flex-shrink-0" strokeWidth={2} />
-            <label htmlFor="map-search" className="sr-only">Buscar creators próximos</label>
-            <input
-              id="map-search"
-              type="text"
-              placeholder="Buscar creators próximos"
-              className="flex-1 text-sm font-medium outline-none bg-transparent placeholder:text-muted-foreground/60"
-              defaultValue="São Paulo, Centro"
-              readOnly
-              aria-label="Buscar creators próximos"
+      {/* 2. Subtle purple brand tint */}
+      <div className="absolute inset-0 bg-primary/8 pointer-events-none" />
+
+      {/* 3. Subtle edge vignette — integrates with page background */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse at 50% 50%, transparent 32%, rgba(255,255,255,0.35) 65%, rgba(255,255,255,0.65) 100%)",
+        }}
+      />
+
+      {/* 4. Central glow behind main creator pin */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(circle at 50% 44%, rgba(139,92,246,0.11) 0%, transparent 36%)",
+        }}
+      />
+
+      {/* 5. Search bar */}
+      <div className="absolute top-4 left-4 right-4 z-20">
+        <div className="bg-white/95 backdrop-blur-xl rounded-2xl border border-border/25 shadow-md px-3.5 py-2 flex items-center gap-2.5">
+          <Search
+            className="w-4 h-4 text-muted-foreground/70 flex-shrink-0"
+            strokeWidth={2}
+          />
+          <label htmlFor="map-search" className="sr-only">
+            Buscar creators próximos
+          </label>
+          <input
+            id="map-search"
+            type="text"
+            defaultValue="Belo Horizonte, Centro"
+            readOnly
+            className="flex-1 text-sm font-medium text-foreground bg-transparent outline-none cursor-default"
+            aria-label="Localização atual"
+          />
+          <button
+            className="p-1.5 rounded-lg hover:bg-accent/80 transition-colors flex-shrink-0"
+            aria-label="Filtros"
+          >
+            <SlidersHorizontal
+              className="w-3.5 h-3.5 text-foreground/50"
+              strokeWidth={2}
             />
-            <button className="p-2 hover:bg-accent/50 rounded-lg transition-colors" aria-label="Filtros">
-              <SlidersHorizontal className="w-4 h-4 text-foreground/70" strokeWidth={2} />
-            </button>
-          </div>
+          </button>
         </div>
       </div>
 
-      {/* Creator Pins */}
-      {creators.map((creator) => (
+      {/* 6. Secondary creator pins — desktop/tablet only */}
+      {secondaryPins.map((pin) => (
         <div
-          key={creator.id}
-          className="absolute z-10 transform -translate-x-1/2 -translate-y-1/2"
-          style={{ left: creator.position.x, top: creator.position.y }}
+          key={pin.name}
+          className="absolute hidden sm:block z-10 -translate-x-1/2 -translate-y-1/2"
+          style={{ left: pin.left, top: pin.top }}
         >
-          <div className={`relative group cursor-pointer ${creator.selected ? "z-30" : "z-10"}`}>
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-1 w-3 h-1.5 bg-black/10 rounded-full blur-sm" />
-            <div className={`relative transition-all duration-300 ${creator.selected ? "scale-100" : "scale-90 opacity-60 group-hover:scale-95 group-hover:opacity-80"}`}>
-              <div className={`w-11 h-11 rounded-full border-[2.5px] overflow-hidden ${creator.selected ? "border-primary shadow-lg shadow-primary/30" : "border-white shadow-md"}`}>
-                <Image
-                  src={creator.image}
-                  alt={creator.name}
-                  width={44}
-                  height={44}
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className={`absolute -bottom-1.5 left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-[5px] border-l-transparent border-r-[5px] border-r-transparent ${creator.selected ? "border-t-[7px] border-t-primary" : "border-t-[7px] border-t-white"}`} />
+          <div className="relative flex flex-col items-center">
+            <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-white shadow-lg opacity-75 hover:opacity-95 transition-opacity cursor-pointer">
+              <Image
+                src={pin.image}
+                alt={pin.name}
+                width={40}
+                height={40}
+                className="w-full h-full object-cover"
+              />
             </div>
-            {creator.selected && (
-              <div className="absolute inset-0 rounded-full border-[2.5px] border-primary animate-ping opacity-20" />
-            )}
+            <div className="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-t-[5px] border-t-white -mt-px" />
           </div>
         </div>
       ))}
 
-      {/* Selected Creator Card */}
-      {selectedCreator && (
-        <div className="absolute bottom-5 left-5 right-5 z-30 animate-in slide-in-from-bottom-4 duration-300">
-          <div className="bg-white/98 backdrop-blur-xl rounded-2xl shadow-2xl shadow-black/8 border border-border/40 overflow-hidden">
-            <div className="p-5">
-              <div className="flex gap-4">
-                <div className="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0 border border-border/30 shadow-sm">
-                  <Image
-                    src={selectedCreator.image}
-                    alt={selectedCreator.name}
-                    width={80}
-                    height={80}
-                    className="w-full h-full object-cover"
-                    priority
-                  />
+      {/* 7. Empty location marker — desktop/tablet only */}
+      <div
+        className="absolute hidden sm:block z-10 -translate-x-1/2 -translate-y-1/2"
+        style={{ left: "75%", top: "26%" }}
+      >
+        <svg
+          width="22"
+          height="28"
+          viewBox="0 0 22 28"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="drop-shadow-md"
+        >
+          <path
+            d="M11 0C4.925 0 0 4.925 0 11c0 8.25 11 17 11 17s11-8.75 11-17C22 4.925 17.075 0 11 0z"
+            className="fill-primary"
+          />
+          <circle cx="11" cy="11" r="4.5" fill="white" />
+          <circle cx="11" cy="11" r="2.25" className="fill-primary" />
+        </svg>
+      </div>
+
+      {/* 8. Main creator pin */}
+      <div
+        className="absolute z-20 -translate-x-1/2 -translate-y-1/2"
+        style={{ left: "50%", top: "44%" }}
+      >
+        <div className="flex flex-col items-center">
+          <div className="relative">
+            {/* Pulse animation ring */}
+            <div className="absolute inset-0 rounded-full border-[2.5px] border-primary animate-ping opacity-[0.18]" />
+            {/* Creator photo */}
+            <div
+              className="w-[3.75rem] h-[3.75rem] rounded-full overflow-hidden border-[3px] border-primary relative z-10"
+              style={{
+                boxShadow:
+                  "0 0 0 8px rgba(139,92,246,0.09), 0 6px 20px rgba(139,92,246,0.2)",
+              }}
+            >
+              <Image
+                src={creator.image}
+                alt={creator.name}
+                width={60}
+                height={60}
+                className="w-full h-full object-cover"
+                priority
+              />
+            </div>
+          </div>
+          {/* Teardrop tail */}
+          <div className="w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[8px] border-t-primary -mt-px relative z-10" />
+        </div>
+      </div>
+
+      {/* 9. Creator info card */}
+      <div className="absolute bottom-4 left-4 right-4 z-30">
+        <div className="bg-white/95 backdrop-blur-xl rounded-2xl border border-border/20 shadow-xl p-3">
+          {/* Creator row */}
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl overflow-hidden flex-shrink-0 border border-border/15">
+              <Image
+                src={creator.image}
+                alt={creator.name}
+                width={40}
+                height={40}
+                className="w-full h-full object-cover"
+              />
+            </div>
+
+            <div className="flex-1 min-w-0">
+              <div className="flex items-start justify-between gap-2 mb-1">
+                <div>
+                  <div className="font-bold text-sm text-foreground leading-tight">
+                    {creator.name}
+                  </div>
+                  <div className="text-xs text-muted-foreground font-medium mt-0.5">
+                    {creator.category}
+                  </div>
                 </div>
-                <div className="flex-1 min-w-0">
-                  <div className="flex items-start justify-between gap-3 mb-2">
-                    <div>
-                      <h3 className="font-bold text-base text-foreground mb-0.5">{selectedCreator.name}</h3>
-                      <p className="text-xs font-medium text-muted-foreground">{selectedCreator.category}</p>
-                    </div>
-                    <div className="text-right">
-                      <div className="text-sm font-bold text-foreground">{selectedCreator.price}</div>
-                      <div className="text-[10px] font-medium text-muted-foreground">por projeto</div>
-                    </div>
+                <div className="text-right flex-shrink-0">
+                  <div className="text-sm font-bold text-foreground">
+                    {creator.price}
                   </div>
-                  <div className="flex items-center gap-4 mb-4">
-                    <div className="flex items-center gap-1.5">
-                      <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                      <span className="text-xs font-bold text-foreground">{selectedCreator.rating}</span>
-                      <span className="text-xs text-muted-foreground">({selectedCreator.reviews})</span>
-                    </div>
-                    <div className="w-px h-3 bg-border" />
-                    <div className="flex items-center gap-1">
-                      <MapPin className="w-3.5 h-3.5 text-primary" strokeWidth={2} />
-                      <span className="text-xs font-semibold text-foreground">{selectedCreator.distance}</span>
-                    </div>
+                  <div className="text-[10px] text-muted-foreground font-medium">
+                    por projeto
                   </div>
-                  <div className="flex gap-2 mb-4">
-                    <div className="flex items-center gap-1 px-2.5 py-1 bg-accent/60 rounded-lg">
-                      <Video className="w-3 h-3 text-primary" strokeWidth={2} />
-                      <span className="text-[11px] font-semibold text-foreground">Reels</span>
-                    </div>
-                    <div className="flex items-center gap-1 px-2.5 py-1 bg-accent/60 rounded-lg">
-                      <Camera className="w-3 h-3 text-primary" strokeWidth={2} />
-                      <span className="text-[11px] font-semibold text-foreground">Fotos</span>
-                    </div>
-                    <div className="flex items-center gap-1 px-2.5 py-1 bg-accent/60 rounded-lg">
-                      <Share2 className="w-3 h-3 text-primary" strokeWidth={2} />
-                      <span className="text-[11px] font-semibold text-foreground">Stories</span>
-                    </div>
-                  </div>
-                  <button className="w-full px-4 py-2.5 bg-primary text-white text-sm font-semibold rounded-xl hover:bg-primary/90 transition-all shadow-md shadow-primary/20">
-                    Ver perfil completo
-                  </button>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2.5 text-xs">
+                <div className="flex items-center gap-1">
+                  <Star className="w-3 h-3 fill-amber-400 text-amber-400" />
+                  <span className="font-bold text-foreground">
+                    {creator.rating}
+                  </span>
+                  <span className="text-muted-foreground">
+                    ({creator.reviews})
+                  </span>
+                </div>
+                <div className="w-px h-3 bg-border/50" />
+                <div className="flex items-center gap-1">
+                  <MapPin
+                    className="w-3 h-3 text-primary flex-shrink-0"
+                    strokeWidth={2}
+                  />
+                  <span className="font-semibold text-foreground">
+                    {creator.distance}
+                  </span>
                 </div>
               </div>
             </div>
           </div>
+
+          {/* CTA */}
+          <button className="w-full mt-2.5 py-2 bg-primary text-white text-sm font-semibold rounded-xl hover:bg-primary/90 transition-colors shadow-sm shadow-primary/15">
+            Ver perfil completo
+          </button>
         </div>
-      )}
+      </div>
     </div>
   );
 }

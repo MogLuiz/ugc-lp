@@ -12,7 +12,6 @@ import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Encontre Creators Locais para Seu Negócio",
   description:
     "Plataforma que conecta empresas a creators locais. Mapa interativo, marketplace com filtros, creators presenciais. Cadastro gratuito, sem mensalidades.",
   openGraph: {
