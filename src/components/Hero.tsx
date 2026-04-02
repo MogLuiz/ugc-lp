@@ -31,45 +31,28 @@ export function Hero() {
                 <span className="block text-primary mt-1">da sua região</span>
               </h1>
               <p className="text-xl lg:text-[1.2rem] text-muted-foreground max-w-xl leading-[1.6] font-normal">
-                Descubra creators próximos ao seu negócio no mapa. Contrate para conteúdo presencial ou digital de forma organizada e profissional.
+                Descubra creators próximos ao seu negócio no mapa. Contrate para
+                conteúdo presencial ou digital de forma organizada e
+                profissional.
               </p>
-            </div>
-
-            {/* Value Props */}
-            <div className="space-y-4 pt-2">
-              <div className="flex items-start gap-3.5">
-                <div className="w-7 h-7 rounded-full bg-primary/12 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <div className="w-2.5 h-2.5 rounded-full bg-primary" />
-                </div>
-                <p className="text-[1.0625rem] text-foreground leading-[1.5]">
-                  <strong className="font-semibold">Mapa interativo</strong> mostra creators próximos ao seu estabelecimento
-                </p>
-              </div>
-              <div className="flex items-start gap-3.5">
-                <div className="w-7 h-7 rounded-full bg-primary/12 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <div className="w-2.5 h-2.5 rounded-full bg-primary" />
-                </div>
-                <p className="text-[1.0625rem] text-foreground leading-[1.5]">
-                  <strong className="font-semibold">Marketplace com filtros</strong> por categoria, localização e formato
-                </p>
-              </div>
-              <div className="flex items-start gap-3.5">
-                <div className="w-7 h-7 rounded-full bg-primary/12 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <div className="w-2.5 h-2.5 rounded-full bg-primary" />
-                </div>
-                <p className="text-[1.0625rem] text-foreground leading-[1.5]">
-                  <strong className="font-semibold">Creators presenciais</strong> que vão até o seu negócio gravar
-                </p>
-              </div>
             </div>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 pt-6 lg:pt-4">
-              <a href={siteConfig.links.empresas} className="group px-9 py-4 bg-primary text-white rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/35 flex items-center justify-center gap-2.5 font-semibold text-[1.0625rem]">
+              <a
+                href={siteConfig.links.empresas}
+                className="group px-9 py-4 bg-primary text-white rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/35 flex items-center justify-center gap-2.5 font-semibold text-[1.0625rem]"
+              >
                 <span>Começar agora</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" strokeWidth={2.5} />
+                <ArrowRight
+                  className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+                  strokeWidth={2.5}
+                />
               </a>
-              <a href={siteConfig.links.creators} className="px-9 py-4 bg-white border-2 border-border text-foreground rounded-xl hover:border-primary/30 hover:bg-accent transition-all flex items-center justify-center gap-2 font-semibold text-[1.0625rem] shadow-sm">
+              <a
+                href={siteConfig.links.creators}
+                className="px-9 py-4 bg-white border-2 border-border text-foreground rounded-xl hover:border-primary/30 hover:bg-accent transition-all flex items-center justify-center gap-2 font-semibold text-[1.0625rem] shadow-sm"
+              >
                 <span>Sou creator</span>
               </a>
             </div>
@@ -77,16 +60,28 @@ export function Hero() {
             {/* Social Proof */}
             <div className="grid grid-cols-3 gap-4 pt-8 lg:pt-5 border-t border-border/60">
               <div>
-                <div className="text-[1.375rem] sm:text-[1.75rem] font-bold text-foreground tracking-tight">2.500+</div>
-                <div className="text-xs sm:text-sm text-muted-foreground mt-0.5">Creators ativos</div>
+                <div className="text-[1.375rem] sm:text-[1.75rem] font-bold text-foreground tracking-tight">
+                  2.500+
+                </div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-0.5">
+                  Creators ativos
+                </div>
               </div>
               <div className="border-l border-border/60 pl-4 sm:pl-6">
-                <div className="text-[1.375rem] sm:text-[1.75rem] font-bold text-foreground tracking-tight">850+</div>
-                <div className="text-xs sm:text-sm text-muted-foreground mt-0.5">Empresas usando</div>
+                <div className="text-[1.375rem] sm:text-[1.75rem] font-bold text-foreground tracking-tight">
+                  850+
+                </div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-0.5">
+                  Empresas usando
+                </div>
               </div>
               <div className="border-l border-border/60 pl-4 sm:pl-6">
-                <div className="text-[1.375rem] sm:text-[1.75rem] font-bold text-foreground tracking-tight">15k+</div>
-                <div className="text-xs sm:text-sm text-muted-foreground mt-0.5">Conteúdos criados</div>
+                <div className="text-[1.375rem] sm:text-[1.75rem] font-bold text-foreground tracking-tight">
+                  15k+
+                </div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-0.5">
+                  Conteúdos criados
+                </div>
               </div>
             </div>
           </div>
