@@ -53,16 +53,16 @@ export function FAQ() {
   return (
     <section
       id="faq"
-      className="py-16 lg:py-20 bg-gradient-to-br from-accent/20 via-white to-accent/30"
+      className="py-10 lg:py-20 bg-gradient-to-br from-accent/20 via-white to-accent/30"
     >
       <div className="max-w-4xl mx-auto px-6 lg:px-12">
-        <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-primary/10 shadow-sm mb-4">
+        <div className="text-center mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-primary/10 shadow-sm mb-3">
             <span className="text-sm text-primary font-medium">
               Perguntas frequentes
             </span>
           </div>
-          <h2 className="text-[2rem] lg:text-5xl font-bold text-foreground mb-4 leading-tight">
+          <h2 className="text-[2rem] lg:text-5xl font-bold text-foreground mb-3 leading-tight">
             Dúvidas sobre a <span className="text-primary">plataforma</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
@@ -70,7 +70,7 @@ export function FAQ() {
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-3">
           {faqs.map((faq, index) => (
             <div
               key={index}
@@ -78,10 +78,10 @@ export function FAQ() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full p-5 lg:p-6 flex items-center justify-between gap-4 text-left hover:bg-accent/30 transition-colors"
+                className="w-full p-4 lg:p-6 flex items-center justify-between gap-4 text-left hover:bg-accent/30 transition-colors"
                 aria-expanded={index === openIndex}
               >
-                <span className="font-semibold text-foreground text-[1rem] lg:text-lg pr-4">
+                <span className="font-semibold text-foreground text-[0.925rem] lg:text-lg pr-4">
                   {faq.question}
                 </span>
                 <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
@@ -94,7 +94,7 @@ export function FAQ() {
               </button>
 
               {index === openIndex && (
-                <div className="px-6 pb-6 animate-in slide-in-from-top-2 duration-200">
+                <div className="px-4 pb-4 lg:px-6 lg:pb-6 animate-in slide-in-from-top-2 duration-200">
                   <p className="text-muted-foreground leading-relaxed">
                     {faq.answer}
                   </p>
@@ -104,7 +104,7 @@ export function FAQ() {
           ))}
         </div>
 
-        <div className="mt-12 p-8 bg-gradient-to-br from-primary/5 to-purple-500/5 rounded-2xl border border-primary/20 text-center">
+        <div className="mt-8 p-6 lg:p-8 bg-gradient-to-br from-primary/5 to-purple-500/5 rounded-2xl border border-primary/20 text-center">
           <h3 className="text-xl font-bold text-foreground mb-3">
             Ainda tem dúvidas?
           </h3>

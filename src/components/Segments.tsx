@@ -66,17 +66,17 @@ export function Segments() {
   return (
     <section
       id="segmentos"
-      className="py-20 lg:py-24 bg-gradient-to-b from-white via-[#fafbfc] to-white"
+      className="py-12 lg:py-24 bg-gradient-to-b from-white via-[#fafbfc] to-white"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="max-w-4xl mx-auto text-center mb-14 lg:mb-20">
-          <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-white backdrop-blur-sm rounded-full border border-primary/20 shadow-sm shadow-primary/5 mb-6">
+        <div className="max-w-4xl mx-auto text-center mb-10 lg:mb-20">
+          <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-white backdrop-blur-sm rounded-full border border-primary/20 shadow-sm shadow-primary/5 mb-4 lg:mb-6">
             <div className="w-1.5 h-1.5 rounded-full bg-primary" />
             <span className="text-sm text-primary font-semibold tracking-tight">
               Para todo tipo de negócio
             </span>
           </div>
-          <h2 className="text-[2rem] sm:text-[2.75rem] lg:text-[2.75rem] font-bold text-foreground mb-5 leading-[1.05] tracking-[-0.02em]">
+          <h2 className="text-[2rem] sm:text-[2.75rem] lg:text-[2.75rem] font-bold text-foreground mb-3 lg:mb-5 leading-[1.05] tracking-[-0.02em]">
             Creators locais para diferentes{" "}
             <span className="text-primary">tipos de negócio</span>
           </h2>
@@ -86,30 +86,30 @@ export function Segments() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7 lg:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
           {segments.map((segment, index) => (
             <div
               key={index}
-              className={`group p-6 lg:p-8 rounded-[1.75rem] border transition-all duration-500 hover:shadow-2xl hover:shadow-black/5 ${
+              className={`group p-5 lg:p-8 rounded-[1.75rem] border transition-all duration-500 hover:shadow-2xl hover:shadow-black/5 ${
                 segment.featured
                   ? "bg-gradient-to-br from-white to-accent/40 border-primary/25 hover:border-primary/40"
                   : "bg-white border-border/50 hover:border-primary/30"
               }`}
             >
-              <div className="w-12 h-12 lg:w-[4.5rem] lg:h-[4.5rem] rounded-[1.25rem] bg-gradient-to-br from-primary/15 to-primary/8 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-500 shadow-sm shadow-primary/10">
+              <div className="w-11 h-11 lg:w-[4.5rem] lg:h-[4.5rem] rounded-[1.25rem] bg-gradient-to-br from-primary/15 to-primary/8 flex items-center justify-center mb-3 lg:mb-4 group-hover:scale-105 transition-transform duration-500 shadow-sm shadow-primary/10">
                 <segment.icon
                   className="w-6 h-6 lg:w-9 lg:h-9 text-primary"
                   strokeWidth={2.3}
                 />
               </div>
-              <h3 className="text-[1.125rem] lg:text-[1.375rem] font-bold text-foreground mb-3 tracking-tight leading-tight">
+              <h3 className="text-[1.05rem] lg:text-[1.375rem] font-bold text-foreground mb-2 lg:mb-3 tracking-tight leading-tight">
                 {segment.title}
               </h3>
-              <p className="text-muted-foreground mb-7 leading-[1.7] text-[0.95rem]">
+              <p className="text-muted-foreground mb-4 lg:mb-7 leading-[1.7] text-[0.95rem]">
                 {segment.description}
               </p>
-              <div className="space-y-3">
-                <div className="text-[0.7rem] font-black text-primary/60 uppercase tracking-widest mb-3.5">
+              <div className="space-y-2">
+                <div className="text-[0.7rem] font-black text-primary/60 uppercase tracking-widest mb-2 lg:mb-3.5">
                   Tipos de conteúdo
                 </div>
                 {segment.examples.map((example, i) => (
@@ -125,8 +125,8 @@ export function Segments() {
           ))}
         </div>
 
-        <div className="mt-14 lg:mt-20">
-          <div className="grid md:grid-cols-4 gap-5 lg:gap-8 p-6 lg:p-10 bg-white rounded-[1.75rem] border border-border/50 shadow-xl shadow-black/5">
+        <div className="mt-8 lg:mt-20">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8 p-5 lg:p-10 bg-white rounded-[1.75rem] border border-border/50 shadow-xl shadow-black/5">
             <div className="text-center space-y-2">
               <div className="text-[2rem] lg:text-[2.25rem] font-black text-primary leading-none tracking-tight">
                 850+
@@ -162,8 +162,8 @@ export function Segments() {
           </div>
         </div>
 
-        <div className="mt-10 text-center">
-          <p className="text-[1.05rem] text-muted-foreground mb-7 leading-relaxed max-w-2xl mx-auto">
+        <div className="mt-6 text-center">
+          <p className="text-[1.05rem] text-muted-foreground mb-5 lg:mb-7 leading-relaxed max-w-2xl mx-auto">
             Encontre creators que entendem o seu mercado, a sua cidade e o tipo
             de conteúdo que a sua empresa precisa.
           </p>

@@ -2,19 +2,19 @@ import { MapPin, Calendar, Users, Clock, Sparkles } from "lucide-react";
 
 export function LocalCreators() {
   return (
-    <section className="py-20 lg:py-24 bg-gradient-to-b from-white via-[#fafbfc] to-white relative overflow-hidden">
+    <section className="py-12 lg:py-24 bg-gradient-to-b from-white via-[#fafbfc] to-white relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(107,70,193,0.03),transparent_50%)]" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative">
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left - Content */}
-          <div className="space-y-10 lg:space-y-8">
+          <div className="space-y-6 lg:space-y-8">
             <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-white rounded-full border border-primary/20 shadow-sm shadow-primary/5">
               <div className="w-1.5 h-1.5 rounded-full bg-primary" />
               <span className="text-sm text-primary font-semibold tracking-tight">Creators presenciais</span>
             </div>
 
-            <div className="space-y-5">
+            <div className="space-y-3 lg:space-y-5">
               <h2 className="text-[2.75rem] lg:text-[2.75rem] font-bold text-foreground leading-[1.05] tracking-[-0.02em]">
                 Creators locais vão<br className="hidden lg:block" /> até o seu <span className="text-primary">negócio</span>
               </h2>
@@ -23,7 +23,7 @@ export function LocalCreators() {
               </p>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-3">
               <div className="flex items-start gap-4 p-5 lg:p-5 bg-white rounded-2xl border border-border/50 shadow-sm hover:shadow-md hover:border-primary/25 transition-all duration-300 group">
                 <div className="w-11 h-11 rounded-[0.875rem] bg-primary/8 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/12 transition-colors">
                   <MapPin className="w-5 h-5 text-primary" strokeWidth={2.3} />

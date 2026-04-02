@@ -17,7 +17,7 @@ export function FinalCTA() {
           </div>
 
           <div className="relative">
-            <div className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30 mb-7">
+            <div className="inline-flex items-center gap-2.5 px-5 py-2.5 bg-white/20 backdrop-blur-md rounded-full border border-white/30 mb-5 lg:mb-7">
               <Sparkles className="w-4 h-4" strokeWidth={2.5} />
               <span className="text-sm font-semibold tracking-tight">Comece hoje mesmo</span>
             </div>
@@ -31,39 +31,39 @@ export function FinalCTA() {
                 Descubra creators da sua região no mapa, contrate para conteúdo presencial ou digital e gerencie tudo em uma plataforma profissional.
               </p>
 
-              <div className="grid sm:grid-cols-3 gap-4 mb-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6" strokeWidth={2.5} />
+              <div className="grid sm:grid-cols-3 gap-3 mb-4 lg:mb-6">
+                <div className="flex items-start gap-3 lg:gap-4">
+                  <div className="w-9 h-9 lg:w-12 lg:h-12 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 lg:w-6 lg:h-6" strokeWidth={2.5} />
                   </div>
                   <div>
-                    <div className="font-bold text-[1.0625rem] mb-1.5">Mapa interativo</div>
+                    <div className="font-bold text-[1rem] mb-1">Mapa interativo</div>
                     <div className="text-sm text-white/85 leading-relaxed">Visualize creators próximos</div>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
-                    <Users className="w-6 h-6" strokeWidth={2.5} />
+                <div className="flex items-start gap-3 lg:gap-4">
+                  <div className="w-9 h-9 lg:w-12 lg:h-12 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
+                    <Users className="w-5 h-5 lg:w-6 lg:h-6" strokeWidth={2.5} />
                   </div>
                   <div>
-                    <div className="font-bold text-[1.0625rem] mb-1.5">2.500+ creators</div>
+                    <div className="font-bold text-[1rem] mb-1">2.500+ creators</div>
                     <div className="text-sm text-white/85 leading-relaxed">Todos verificados</div>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 lg:w-12 lg:h-12 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
-                    <Sparkles className="w-6 h-6" strokeWidth={2.5} />
+                <div className="flex items-start gap-3 lg:gap-4">
+                  <div className="w-9 h-9 lg:w-12 lg:h-12 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
+                    <Sparkles className="w-5 h-5 lg:w-6 lg:h-6" strokeWidth={2.5} />
                   </div>
                   <div>
-                    <div className="font-bold text-[1.0625rem] mb-1.5">Gestão completa</div>
+                    <div className="font-bold text-[1rem] mb-1">Gestão completa</div>
                     <div className="text-sm text-white/85 leading-relaxed">Do briefing à entrega</div>
                   </div>
                 </div>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 mb-6">
+              <div className="flex flex-col sm:flex-row gap-3 mb-4 lg:mb-6">
                 <a href={siteConfig.links.empresas} className="group px-10 py-4 bg-white text-primary rounded-xl hover:bg-white/95 transition-all shadow-2xl hover:shadow-white/30 hover:scale-105 flex items-center justify-center gap-2.5 font-bold text-[1.0625rem]">
                   <span>Começar agora</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" strokeWidth={2.5} />
