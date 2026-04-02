@@ -16,11 +16,11 @@ export function MapFeature() {
           </div>
 
           <h2 className="text-[2.75rem] lg:text-[3.5rem] font-bold text-white mb-6 leading-[1.1] tracking-tight">
-            Descubra creators<br />próximos ao seu negócio
+            Encontre creators<br />da sua região no mapa
           </h2>
 
           <p className="text-xl lg:text-[1.375rem] text-white/95 max-w-3xl mx-auto leading-[1.6]">
-            O único lugar onde você encontra creators locais em um mapa interativo, filtra por distância e contrata quem está perto da sua empresa
+            Visualize creators próximos, filtre por distância e contrate com mais contexto, rapidez e organização.
           </p>
         </div>
 
@@ -29,9 +29,9 @@ export function MapFeature() {
             <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
               <MapPin className="w-8 h-8 text-white" strokeWidth={2.5} />
             </div>
-            <h3 className="text-xl font-bold text-white mb-3">Busca geográfica</h3>
+            <h3 className="text-xl font-bold text-white mb-3">Busca por região</h3>
             <p className="text-white/90 leading-relaxed text-[0.9375rem]">
-              Veja creators da sua cidade, bairro ou raio específico no mapa interativo
+              Encontre creators por cidade, bairro ou proximidade no mapa
             </p>
           </div>
 
@@ -39,9 +39,9 @@ export function MapFeature() {
             <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
               <Target className="w-8 h-8 text-white" strokeWidth={2.5} />
             </div>
-            <h3 className="text-xl font-bold text-white mb-3">Filtros precisos</h3>
+            <h3 className="text-xl font-bold text-white mb-3">Filtros por perfil</h3>
             <p className="text-white/90 leading-relaxed text-[0.9375rem]">
-              Refine por categoria, formato de conteúdo e disponibilidade local
+              Filtre por categoria, formato de conteúdo e disponibilidade
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export function MapFeature() {
             </div>
             <h3 className="text-xl font-bold text-white mb-3">Contratação direta</h3>
             <p className="text-white/90 leading-relaxed text-[0.9375rem]">
-              Converse, agende e contrate creators sem intermediários ou burocracia
+              Converse, agende e contrate com mais agilidade
             </p>
           </div>
         </div>
