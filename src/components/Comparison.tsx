@@ -35,14 +35,14 @@ const comparisons = [
 
 export function Comparison() {
   return (
-    <section className="py-32 lg:py-24 bg-gradient-to-b from-white via-[#fafbfc] to-white">
+    <section className="py-20 lg:py-24 bg-gradient-to-b from-white via-[#fafbfc] to-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="max-w-4xl mx-auto text-center mb-24 lg:mb-20">
+        <div className="max-w-4xl mx-auto text-center mb-14 lg:mb-20">
           <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-white backdrop-blur-sm rounded-full border border-primary/20 shadow-sm shadow-primary/5 mb-6">
             <div className="w-1.5 h-1.5 rounded-full bg-primary" />
             <span className="text-sm text-primary font-semibold tracking-tight">Por que UGC Local?</span>
           </div>
-          <h2 className="text-[2.75rem] lg:text-[2.75rem] font-bold text-foreground mb-5 leading-[1.05] tracking-[-0.02em]">
+          <h2 className="text-[2rem] sm:text-[2.75rem] lg:text-[2.75rem] font-bold text-foreground mb-5 leading-[1.05] tracking-[-0.02em]">
             Mais simples do que contratar <span className="text-primary">pelo direct</span>
           </h2>
           <p className="text-[1.05rem] lg:text-[1.1rem] text-muted-foreground leading-[1.75] max-w-xl mx-auto">

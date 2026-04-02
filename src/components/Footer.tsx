@@ -4,8 +4,8 @@ import { siteConfig } from "@/lib/config";
 export function Footer() {
   return (
     <footer className="bg-foreground text-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 lg:py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-12 mb-12">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-12 lg:py-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-8">
           {/* Brand */}
           <div className="space-y-7">
             <div className="flex items-center gap-2.5">

@@ -2,11 +2,11 @@ import { MapPin, Calendar, Users, Clock, Sparkles } from "lucide-react";
 
 export function LocalCreators() {
   return (
-    <section className="py-32 lg:py-24 bg-gradient-to-b from-white via-[#fafbfc] to-white relative overflow-hidden">
+    <section className="py-20 lg:py-24 bg-gradient-to-b from-white via-[#fafbfc] to-white relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(107,70,193,0.03),transparent_50%)]" />
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left - Content */}
           <div className="space-y-10 lg:space-y-8">
             <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-white rounded-full border border-primary/20 shadow-sm shadow-primary/5">
@@ -65,7 +65,7 @@ export function LocalCreators() {
           {/* Right - Visual */}
           <div className="relative">
             <div className="relative bg-white rounded-[1.75rem] border border-border/60 shadow-2xl shadow-black/5 overflow-hidden">
-              <div className="bg-gradient-to-br from-primary via-primary to-[#8B5CF6] px-7 py-6 text-white">
+              <div className="bg-gradient-to-br from-primary via-primary to-[#8B5CF6] px-5 py-5 lg:px-7 lg:py-6 text-white">
                 <div className="flex items-center justify-between mb-4">
                   <div>
                     <div className="text-xs font-medium opacity-75 mb-1 tracking-wide uppercase">Creators na sua região</div>
@@ -81,7 +81,7 @@ export function LocalCreators() {
                 </div>
               </div>
 
-              <div className="p-6 space-y-3 bg-gradient-to-b from-white to-[#fafbfc]">
+              <div className="p-5 lg:p-6 space-y-3 bg-gradient-to-b from-white to-[#fafbfc]">
                 {[
                   { name: "Marina Santos", distance: "900m", time: "Disponível agora", specialty: "Food & Restaurantes", available: true },
                   { name: "Lucas Oliveira", distance: "1.2km", time: "Hoje, 14h–18h", specialty: "Varejo & Moda", available: true },
