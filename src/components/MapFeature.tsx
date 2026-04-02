@@ -2,20 +2,20 @@ import { MapPin, Zap, Target } from "lucide-react";
 
 export function MapFeature() {
   return (
-    <section className="py-16 lg:py-20 bg-gradient-to-br from-primary via-[#7C3AED] to-[#8B5CF6] relative overflow-hidden">
+    <section className="py-10 lg:py-20 bg-gradient-to-br from-primary via-[#7C3AED] to-[#8B5CF6] relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 right-0 w-[700px] h-[700px] bg-white rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-white rounded-full blur-3xl" />
       </div>
 
       <div className="max-w-7xl mx-auto px-6 lg:px-12 relative">
-        <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 mb-5">
+        <div className="text-center mb-8">
+          <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-white/20 backdrop-blur-sm rounded-full border border-white/30 mb-4 lg:mb-5">
             <Zap className="w-4 h-4 text-white" strokeWidth={2.5} />
             <span className="text-sm text-white font-semibold tracking-tight">O grande diferencial</span>
           </div>
 
-          <h2 className="text-[2rem] sm:text-[2.75rem] lg:text-[3.5rem] font-bold text-white mb-5 leading-[1.1] tracking-tight">
+          <h2 className="text-[2rem] sm:text-[2.75rem] lg:text-[3.5rem] font-bold text-white mb-3 lg:mb-5 leading-[1.1] tracking-tight">
             Encontre creators<br />da sua região no mapa
           </h2>
 
@@ -24,7 +24,7 @@ export function MapFeature() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-4 lg:gap-8 max-w-6xl mx-auto">
           <div className="p-6 lg:p-10 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 text-center hover:bg-white/15 transition-all duration-300 group">
             <div className="w-12 h-12 lg:w-16 lg:h-16 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
               <MapPin className="w-6 h-6 lg:w-8 lg:h-8 text-white" strokeWidth={2.5} />
