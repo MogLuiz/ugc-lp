@@ -38,14 +38,15 @@ export function Comparison() {
     <section className="py-32 lg:py-24 bg-gradient-to-b from-white via-[#fafbfc] to-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="max-w-4xl mx-auto text-center mb-24 lg:mb-20">
-          <div className="inline-flex items-center gap-2.5 px-6 py-2.5 bg-white backdrop-blur-sm rounded-full border border-primary/20 shadow-sm shadow-primary/5 mb-6">
-            <span className="text-sm text-primary font-bold tracking-tight">Por que UGC Local?</span>
+          <div className="inline-flex items-center gap-2.5 px-5 py-2 bg-white backdrop-blur-sm rounded-full border border-primary/20 shadow-sm shadow-primary/5 mb-6">
+            <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+            <span className="text-sm text-primary font-semibold tracking-tight">Por que UGC Local?</span>
           </div>
           <h2 className="text-[2.75rem] lg:text-[2.75rem] font-bold text-foreground mb-5 leading-[1.05] tracking-[-0.02em]">
-            Mais simples que buscar <span className="text-primary">no direct</span>
+            Mais simples do que contratar <span className="text-primary">pelo direct</span>
           </h2>
-          <p className="text-[1.1rem] lg:text-[1.3rem] text-muted-foreground leading-[1.7] max-w-2xl mx-auto">
-            Compare o processo tradicional de contratar creators com a experiência organizada da plataforma
+          <p className="text-[1.05rem] lg:text-[1.1rem] text-muted-foreground leading-[1.75] max-w-xl mx-auto">
+            Entenda por que contratar pela plataforma é mais rápido, claro e organizado.
           </p>
         </div>
 
@@ -118,7 +119,7 @@ export function Comparison() {
 
           <div className="text-center mt-12">
             <p className="text-sm text-muted-foreground font-medium">
-              Deixe a plataforma organizar todo o processo para você
+              Menos atrito, mais clareza e mais controle em toda a operação.
             </p>
           </div>
         </div>
