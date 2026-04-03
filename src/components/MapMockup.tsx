@@ -94,7 +94,7 @@ export function MapMockup() {
       {/* 6. Creator secundário 1 — upper-left */}
       <div
         className="absolute z-10 -translate-x-1/2 -translate-y-1/2"
-        style={{ left: "26%", top: "27%" }}
+        style={{ left: "28%", top: "29%" }}
       >
         <div className="flex flex-col items-center">
           <div
@@ -149,19 +149,9 @@ export function MapMockup() {
         </div>
       </div>
 
-      {/* 9. Pin simples extra — upper-right, reforça densidade — oculto no mobile */}
-      <div
-        className="absolute z-10 -translate-x-1/2 -translate-y-1/2 hidden lg:block"
-        style={{ left: "61%", top: "31%" }}
-      >
-        <div className="w-4 h-4 rounded-full bg-primary/55 border-[1.5px] border-white shadow-sm flex items-center justify-center">
-          <div className="w-1 h-1 rounded-full bg-white" />
-        </div>
-      </div>
-
-      {/* 10. Creator info card */}
+      {/* 9. Creator info card */}
       <div className="absolute bottom-3 lg:bottom-4 left-3 lg:left-4 right-3 lg:right-4 z-30">
-        <div className="bg-white/95 backdrop-blur-xl rounded-2xl border border-border/20 shadow-xl p-2 lg:p-2.5">
+        <div className="bg-white/95 backdrop-blur-xl rounded-2xl border border-border/20 shadow-xl p-1.5 lg:p-2.5">
 
           {/* Creator row */}
           <div className="flex items-center gap-2 lg:gap-2.5">
@@ -203,7 +193,7 @@ export function MapMockup() {
           </div>
 
           {/* CTA */}
-          <button className="w-full mt-1.5 py-1 lg:py-1.5 bg-primary text-white text-xs lg:text-sm font-semibold rounded-xl hover:bg-primary/90 transition-colors shadow-sm shadow-primary/15">
+          <button className="w-full mt-1 lg:mt-1.5 py-1 lg:py-1.5 bg-primary text-white text-xs lg:text-sm font-semibold rounded-xl hover:bg-primary/90 transition-colors shadow-sm shadow-primary/15">
             Ver perfil completo
           </button>
 
