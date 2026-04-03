@@ -55,41 +55,13 @@ export function Discovery() {
                 </div>
               </div>
               {/* Map preview */}
-              <div className="mt-auto relative h-20 lg:h-32 rounded-2xl bg-gradient-to-br from-[#ede9e1] to-[#e4dfd6] overflow-hidden border border-black/5">
-                <svg className="absolute inset-0 w-full h-full opacity-25">
-                  <line
-                    x1="0"
-                    y1="36%"
-                    x2="100%"
-                    y2="36%"
-                    stroke="#a8906e"
-                    strokeWidth="1.5"
-                  />
-                  <line
-                    x1="0"
-                    y1="65%"
-                    x2="100%"
-                    y2="65%"
-                    stroke="#a8906e"
-                    strokeWidth="1"
-                  />
-                  <line
-                    x1="32%"
-                    y1="0"
-                    x2="32%"
-                    y2="100%"
-                    stroke="#a8906e"
-                    strokeWidth="1.5"
-                  />
-                  <line
-                    x1="65%"
-                    y1="0"
-                    x2="65%"
-                    y2="100%"
-                    stroke="#a8906e"
-                    strokeWidth="1"
-                  />
-                </svg>
+              <div
+                className="mt-auto relative h-20 lg:h-32 rounded-2xl overflow-hidden border border-black/5 bg-center bg-no-repeat"
+                style={{
+                  backgroundImage: "url('/images/creators/map-background.png')",
+                  backgroundSize: "118% 118%",
+                }}
+              >
                 <div className="absolute top-[28%] left-[27%] w-4 h-4 rounded-full bg-primary border-2 border-white shadow-md" />
                 <div className="absolute top-[52%] left-[56%] w-3 h-3 rounded-full bg-primary/55 border-2 border-white shadow-sm" />
                 <div className="absolute top-[20%] left-[67%] w-3 h-3 rounded-full bg-primary/55 border-2 border-white shadow-sm" />
