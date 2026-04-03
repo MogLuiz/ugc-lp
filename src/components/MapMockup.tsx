@@ -68,12 +68,12 @@ export function MapMockup() {
         <div className="flex flex-col items-center">
           <div className="relative">
             {/* Pulse animation ring */}
-            <div className="absolute inset-0 rounded-full border-[2.5px] border-primary animate-ping opacity-[0.18]" />
+            <div className="absolute inset-0 rounded-full border-[2px] border-primary animate-ping opacity-[0.14]" />
             {/* Creator photo */}
             <div
-              className="w-[3.75rem] h-[3.75rem] rounded-full overflow-hidden border-[3px] border-primary relative z-10"
+              className="w-14 h-14 rounded-full overflow-hidden border-[2.5px] border-primary relative z-10"
               style={{
-                boxShadow: "0 0 0 8px rgba(139,92,246,0.09), 0 6px 20px rgba(139,92,246,0.2)",
+                boxShadow: "0 0 0 6px rgba(139,92,246,0.07), 0 5px 16px rgba(139,92,246,0.16)",
               }}
             >
               <Image
@@ -94,7 +94,7 @@ export function MapMockup() {
       {/* 6. Creator secundário 1 — upper-left */}
       <div
         className="absolute z-10 -translate-x-1/2 -translate-y-1/2"
-        style={{ left: "29%", top: "30%" }}
+        style={{ left: "26%", top: "27%" }}
       >
         <div className="flex flex-col items-center">
           <div
@@ -116,7 +116,7 @@ export function MapMockup() {
       {/* 7. Creator secundário 2 — right of center */}
       <div
         className="absolute z-10 -translate-x-1/2 -translate-y-1/2"
-        style={{ left: "68%", top: "54%" }}
+        style={{ left: "71%", top: "49%" }}
       >
         <div className="flex flex-col items-center">
           <div
@@ -141,9 +141,9 @@ export function MapMockup() {
         style={{ left: "32%", top: "48%" }}
       >
         <div className="flex flex-col items-center">
-          <div className="bg-white/95 backdrop-blur-sm rounded-lg border border-border/30 shadow-md px-1.5 py-1 flex items-center gap-1">
-            <Building2 className="w-3 h-3 text-slate-500 flex-shrink-0" strokeWidth={2} />
-            <span className="text-[10px] font-semibold text-slate-600 leading-none">Sua empresa</span>
+          <div className="bg-white/90 backdrop-blur-sm rounded-md border border-border/20 shadow-sm px-1.5 py-0.5 flex items-center gap-1">
+            <Building2 className="w-2.5 h-2.5 text-slate-400 flex-shrink-0" strokeWidth={2} />
+            <span className="text-[9px] font-medium text-slate-500 leading-none">Sua empresa</span>
           </div>
           <div className="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-t-[5px] border-t-white -mt-px" style={{ filter: "drop-shadow(0 1px 1px rgba(0,0,0,0.08))" }} />
         </div>
@@ -152,10 +152,10 @@ export function MapMockup() {
       {/* 9. Pin simples extra — upper-right, reforça densidade — oculto no mobile */}
       <div
         className="absolute z-10 -translate-x-1/2 -translate-y-1/2 hidden lg:block"
-        style={{ left: "65%", top: "27%" }}
+        style={{ left: "61%", top: "31%" }}
       >
-        <div className="w-5 h-5 rounded-full bg-primary/70 border-2 border-white shadow-md flex items-center justify-center">
-          <div className="w-1.5 h-1.5 rounded-full bg-white" />
+        <div className="w-4 h-4 rounded-full bg-primary/55 border-[1.5px] border-white shadow-sm flex items-center justify-center">
+          <div className="w-1 h-1 rounded-full bg-white" />
         </div>
       </div>
 
