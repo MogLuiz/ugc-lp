@@ -52,20 +52,20 @@ export function Comparison() {
 
         <div className="max-w-5xl mx-auto">
           <div className="bg-white rounded-[1.75rem] border border-border/50 shadow-2xl shadow-black/5 overflow-hidden">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 p-5 md:p-8 lg:p-10 bg-gradient-to-br from-[#fafbfc] via-white to-[#f5f6f8] border-b border-border/50">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 p-4 md:p-8 lg:p-10 bg-gradient-to-br from-[#fafbfc] via-white to-[#f5f6f8] border-b border-border/50">
               <div className="hidden md:block" />
               <div className="text-center space-y-2 md:space-y-3">
                 <div className="text-[0.65rem] md:text-xs font-black text-muted-foreground/60 uppercase tracking-widest">Forma tradicional</div>
-                <div className="inline-flex items-center gap-1.5 md:gap-2.5 px-3 md:px-5 py-2 md:py-2.5 bg-white border border-border/60 rounded-xl shadow-sm">
-                  <X className="w-3.5 md:w-4 h-3.5 md:h-4 text-red-500" strokeWidth={2.5} />
-                  <span className="text-xs md:text-sm font-bold text-foreground/80">Sem plataforma</span>
+                <div className="flex md:inline-flex items-center justify-center whitespace-nowrap gap-1 md:gap-2.5 px-2 md:px-5 py-2 md:py-2.5 bg-white border border-border/60 rounded-xl shadow-sm">
+                  <X className="w-3 md:w-4 h-3 md:h-4 text-red-500 flex-shrink-0" strokeWidth={2.5} />
+                  <span className="text-[0.65rem] md:text-sm font-bold text-foreground/80">Sem plataforma</span>
                 </div>
               </div>
               <div className="text-center space-y-2 md:space-y-3">
                 <div className="text-[0.65rem] md:text-xs font-black text-primary/60 uppercase tracking-widest">UGC Local</div>
-                <div className="inline-flex items-center gap-1.5 md:gap-2.5 px-3 md:px-5 py-2 md:py-2.5 bg-gradient-to-r from-primary to-[#8B5CF6] text-white rounded-xl shadow-lg shadow-primary/30">
-                  <Check className="w-3.5 md:w-4 h-3.5 md:h-4" strokeWidth={2.5} />
-                  <span className="text-xs md:text-sm font-bold">Plataforma completa</span>
+                <div className="flex md:inline-flex items-center justify-center whitespace-nowrap gap-1 md:gap-2.5 px-2 md:px-5 py-2 md:py-2.5 bg-gradient-to-r from-primary to-[#8B5CF6] text-white rounded-xl shadow-lg shadow-primary/30">
+                  <Check className="w-3 md:w-4 h-3 md:h-4 flex-shrink-0" strokeWidth={2.5} />
+                  <span className="text-[0.65rem] md:text-sm font-bold">Plataforma completa</span>
                 </div>
               </div>
             </div>
@@ -74,15 +74,16 @@ export function Comparison() {
               {comparisons.map((item, index) => (
                 <div
                   key={index}
-                  className={`p-4 md:p-0 hover:bg-gradient-to-r hover:from-accent/20 hover:to-transparent transition-all duration-300 ${
+                  className={`p-4 md:p-0 md:grid md:grid-cols-3 md:gap-8 hover:bg-gradient-to-r hover:from-accent/20 hover:to-transparent transition-all duration-300 ${
                     index % 2 === 0 ? "bg-white" : "bg-gradient-to-r from-[#fafbfc] to-white"
                   }`}
                 >
-                  {/* Feature name — visible on all breakpoints */}
-                  <h3 className="font-bold text-foreground text-[0.9375rem] md:text-[1.0625rem] px-0 md:px-7 lg:px-8 py-0 md:py-7 lg:py-6 tracking-tight border-b md:border-b-0 border-border/30 pb-3 mb-3 md:pb-0 md:mb-0">
+                  {/* Col 1 — Feature name */}
+                  <h3 className="font-bold text-foreground text-[0.9375rem] md:text-[1.0625rem] px-0 md:px-8 lg:px-8 py-0 md:py-6 lg:py-6 tracking-tight border-b md:border-b-0 border-border/30 pb-3 mb-3 md:pb-0 md:mb-0 md:flex md:items-center">
                     {item.feature}
                   </h3>
-                  {/* Mobile: side-by-side comparison */}
+
+                  {/* Mobile only: side-by-side comparison */}
                   <div className="grid grid-cols-2 gap-2 md:hidden px-0 pt-1">
                     <div className="flex items-start gap-2.5 p-3 bg-red-50/40 rounded-xl border border-red-100/60">
                       <div className="w-5 h-5 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -97,20 +98,21 @@ export function Comparison() {
                       <p className="text-[0.8rem] font-semibold text-foreground leading-[1.6]">{item.platform}</p>
                     </div>
                   </div>
-                  {/* Desktop: 3-column grid (inner) */}
-                  <div className="hidden md:grid md:grid-cols-2 gap-8 px-7 lg:px-8 py-7 lg:py-6">
-                    <div className="flex items-start gap-3.5">
-                      <div className="w-6 h-6 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <X className="w-4 h-4 text-red-500" strokeWidth={2.5} />
-                      </div>
-                      <p className="text-[0.9rem] text-muted-foreground leading-[1.7] pt-0.5">{item.traditional}</p>
+
+                  {/* Col 2 — Traditional (desktop only) */}
+                  <div className="hidden md:flex items-center gap-3.5 py-6 lg:py-6">
+                    <div className="w-6 h-6 rounded-full bg-red-50 flex items-center justify-center flex-shrink-0">
+                      <X className="w-4 h-4 text-red-500" strokeWidth={2.5} />
                     </div>
-                    <div className="flex items-start gap-3.5">
-                      <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <Check className="w-4 h-4 text-primary" strokeWidth={2.5} />
-                      </div>
-                      <p className="text-[0.9rem] font-semibold text-foreground leading-[1.7] pt-0.5">{item.platform}</p>
+                    <p className="text-[0.9rem] text-muted-foreground leading-[1.7]">{item.traditional}</p>
+                  </div>
+
+                  {/* Col 3 — UGC Local (desktop only) */}
+                  <div className="hidden md:flex items-center gap-3.5 py-6 lg:py-6">
+                    <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                      <Check className="w-4 h-4 text-primary" strokeWidth={2.5} />
                     </div>
+                    <p className="text-[0.9rem] font-semibold text-foreground leading-[1.7]">{item.platform}</p>
                   </div>
                 </div>
               ))}
