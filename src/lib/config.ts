@@ -25,13 +25,13 @@ export const siteConfig = {
   // Troque pelas URLs reais de cadastro/app assim que estiverem disponíveis.
   links: {
     // Cadastro de empresa (CTA principal — "Começar agora", "Para empresas")
-    empresas: "#",
+    empresas: "http://app.ugclocal.com.br/",
     // Cadastro de creator ("Sou creator")
-    creators: "#",
+    creators: "http://app.ugclocal.com.br/",
     // Demo agendada ("Ver demonstração", "Agendar demonstração")
-    demo: "#",
+    demo: "http://app.ugclocal.com.br/",
     // Suporte ("Falar com suporte")
-    suporte: "#",
+    suporte: "http://app.ugclocal.com.br/",
   },
 
   // ── Links do footer ──────────────────────────────────────────────────────

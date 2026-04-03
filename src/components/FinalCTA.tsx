@@ -64,11 +64,11 @@ export function FinalCTA() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-3 mb-4 lg:mb-6">
-                <a href={siteConfig.links.empresas} className="group px-10 py-4 bg-white text-primary rounded-xl hover:bg-white/95 transition-all shadow-2xl hover:shadow-white/30 hover:scale-105 flex items-center justify-center gap-2.5 font-bold text-[1.0625rem]">
+                <a href={siteConfig.links.empresas} target="_blank" rel="noopener noreferrer" className="group px-10 py-4 bg-white text-primary rounded-xl hover:bg-white/95 transition-all shadow-2xl hover:shadow-white/30 hover:scale-105 flex items-center justify-center gap-2.5 font-bold text-[1.0625rem]">
                   <span>Começar agora</span>
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" strokeWidth={2.5} />
                 </a>
-                <a href={siteConfig.links.demo} className="px-10 py-4 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white rounded-xl hover:bg-white/20 hover:border-white/40 transition-all flex items-center justify-center gap-2 font-bold text-[1.0625rem]">
+                <a href={siteConfig.links.demo} target="_blank" rel="noopener noreferrer" className="px-10 py-4 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white rounded-xl hover:bg-white/20 hover:border-white/40 transition-all flex items-center justify-center gap-2 font-bold text-[1.0625rem]">
                   <span>Ver demonstração</span>
                 </a>
               </div>

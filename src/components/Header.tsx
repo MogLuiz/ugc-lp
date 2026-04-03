@@ -34,10 +34,10 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2 lg:gap-3">
-          <a href={siteConfig.links.creators} className="hidden md:block text-sm font-semibold px-5 py-2.5 text-foreground hover:bg-accent rounded-xl transition-colors">
+          <a href={siteConfig.links.creators} target="_blank" rel="noopener noreferrer" className="hidden md:block text-sm font-semibold px-5 py-2.5 text-foreground hover:bg-accent rounded-xl transition-colors">
             Sou creator
           </a>
-          <a href={siteConfig.links.empresas} className="text-xs lg:text-sm font-semibold px-3.5 py-2 lg:px-5 lg:py-2.5 bg-primary text-primary-foreground rounded-xl hover:bg-primary/90 transition-all shadow-md shadow-primary/20">
+          <a href={siteConfig.links.empresas} target="_blank" rel="noopener noreferrer" className="text-xs lg:text-sm font-semibold px-3.5 py-2 lg:px-5 lg:py-2.5 bg-primary text-primary-foreground rounded-xl hover:bg-primary/90 transition-all shadow-md shadow-primary/20">
             Para empresas
           </a>
           {/* Mobile hamburger */}
@@ -77,10 +77,10 @@ export function Header() {
             ))}
           </nav>
           <div className="pt-4 border-t border-border/40 flex flex-col gap-3">
-            <a href={siteConfig.links.creators} className="w-full text-sm font-semibold px-5 py-3 text-foreground hover:bg-accent rounded-xl transition-colors border border-border/60 text-center">
+            <a href={siteConfig.links.creators} target="_blank" rel="noopener noreferrer" className="w-full text-sm font-semibold px-5 py-3 text-foreground hover:bg-accent rounded-xl transition-colors border border-border/60 text-center">
               Sou creator
             </a>
-            <a href={siteConfig.links.empresas} className="w-full text-sm font-semibold px-5 py-3 bg-primary text-primary-foreground rounded-xl hover:bg-primary/90 transition-all shadow-md shadow-primary/20 text-center">
+            <a href={siteConfig.links.empresas} target="_blank" rel="noopener noreferrer" className="w-full text-sm font-semibold px-5 py-3 bg-primary text-primary-foreground rounded-xl hover:bg-primary/90 transition-all shadow-md shadow-primary/20 text-center">
               Para empresas
             </a>
           </div>

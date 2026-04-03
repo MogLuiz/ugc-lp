@@ -41,6 +41,8 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-3 pt-2 lg:pt-4">
               <a
                 href={siteConfig.links.empresas}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group px-9 py-4 bg-primary text-white rounded-xl hover:bg-primary/90 transition-all shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/35 flex items-center justify-center gap-2.5 font-semibold text-[1.0625rem]"
               >
                 <span>Começar agora</span>
@@ -51,6 +53,8 @@ export function Hero() {
               </a>
               <a
                 href={siteConfig.links.creators}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-9 py-4 bg-white border-2 border-border text-foreground rounded-xl hover:border-primary/30 hover:bg-accent transition-all flex items-center justify-center gap-2 font-semibold text-[1.0625rem] shadow-sm"
               >
                 <span>Sou creator</span>

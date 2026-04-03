@@ -72,12 +72,16 @@ export function FAQ() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
               href={siteConfig.links.suporte}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 bg-primary text-white rounded-xl hover:bg-primary/90 transition-colors font-semibold text-center"
             >
               Falar com suporte
             </a>
             <a
               href={siteConfig.links.demo}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 bg-white border border-border text-foreground rounded-xl hover:border-primary/30 hover:bg-accent transition-colors font-semibold text-center"
             >
               Agendar demonstração
