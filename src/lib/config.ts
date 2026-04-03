@@ -16,7 +16,7 @@ export const siteConfig = {
   // ── Redes sociais ────────────────────────────────────────────────────────
   // Troque pelos perfis reais.
   social: {
-    instagram: "https://instagram.com/ugclocal",
+    instagram: "https://instagram.com/ugc.local",
     linkedin: "https://linkedin.com/company/ugclocal",
     twitter: "https://twitter.com/ugclocal",
   },

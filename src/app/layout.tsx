@@ -35,21 +35,12 @@ export const metadata: Metadata = {
     title: "UGC Local — Encontre Creators da Sua Região",
     description:
       "Plataforma que conecta empresas a creators locais. Mapa interativo, marketplace com filtros, contratação segura.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "UGC Local — Conecte-se com creators da sua região",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "UGC Local — Encontre Creators da Sua Região",
     description:
       "Descubra creators próximos ao seu negócio. 2.500+ creators ativos em todo o Brasil.",
-    images: ["/og-image.png"],
   },
   robots: {
     index: true,
@@ -69,7 +60,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: siteConfig.name,
   url: siteConfig.url,
-  logo: `${siteConfig.url}/og-image.png`,
+  logo: `${siteConfig.url}/opengraph-image`,
   description:
     "Plataforma que conecta empresas a creators locais para produção de conteúdo presencial e digital.",
   sameAs: [

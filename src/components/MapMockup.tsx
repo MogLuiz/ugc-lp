@@ -8,7 +8,7 @@ const creator = {
   reviews: 127,
   distance: "1.2 km",
   price: "R$ 350",
-  image: "/images/creators/mapa-1.png",
+  image: "/images/creators/mapa-1.webp",
 };
 
 export function MapMockup() {
@@ -102,11 +102,12 @@ export function MapMockup() {
             style={{ boxShadow: "0 0 0 4px rgba(139,92,246,0.07), 0 4px 12px rgba(139,92,246,0.14)" }}
           >
             <Image
-              src="/images/creators/mapa-2.png"
+              src="/images/creators/mapa-2.webp"
               alt="Creator próximo"
               width={40}
               height={40}
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
           <div className="w-0 h-0 border-l-[5px] border-l-transparent border-r-[5px] border-r-transparent border-t-[6px] border-t-primary/55 -mt-px relative z-10" />
@@ -124,11 +125,12 @@ export function MapMockup() {
             style={{ boxShadow: "0 0 0 4px rgba(139,92,246,0.07), 0 4px 12px rgba(139,92,246,0.14)" }}
           >
             <Image
-              src="/images/creators/mapa-3.png"
+              src="/images/creators/mapa-3.webp"
               alt="Creator próximo"
               width={40}
               height={40}
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
           <div className="w-0 h-0 border-l-[5px] border-l-transparent border-r-[5px] border-r-transparent border-t-[6px] border-t-primary/55 -mt-px relative z-10" />

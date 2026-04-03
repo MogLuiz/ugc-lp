@@ -58,7 +58,7 @@ export function Discovery() {
               <div
                 className="mt-auto relative h-20 lg:h-32 rounded-2xl overflow-hidden border border-black/5 bg-center bg-no-repeat"
                 style={{
-                  backgroundImage: "url('/images/creators/map-background.png')",
+                  backgroundImage: "url('/images/creators/map-background-thumb.webp')",
                   backgroundSize: "118% 118%",
                 }}
               >
