@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Search, SlidersHorizontal, MapPin, Star } from "lucide-react";
+import { Search, SlidersHorizontal, MapPin, Star, Building2 } from "lucide-react";
 
 const creator = {
   name: "Ana Silva",
@@ -8,16 +8,16 @@ const creator = {
   reviews: 127,
   distance: "1.2 km",
   price: "R$ 350",
-  image: "/images/creators/ana.jpg",
+  image: "/images/creators/mapa-1.png",
 };
 
 export function MapMockup() {
   return (
     <div className="relative w-full h-full rounded-3xl overflow-hidden border border-border/20 shadow-2xl shadow-black/10 bg-[#f0edf8]">
 
-      {/* 1. Map background — inclui pins secundários, marker e glow central */}
+      {/* 1. Map background — limpo, pins construídos via código */}
       <Image
-        src="/images/creators/map-background-novo.png"
+        src="/images/creators/map-background.png"
         fill
         className="object-cover"
         style={{ filter: "contrast(1.08) saturate(1.08)" }}
@@ -91,7 +91,75 @@ export function MapMockup() {
         </div>
       </div>
 
-      {/* 6. Creator info card */}
+      {/* 6. Creator secundário 1 — upper-left */}
+      <div
+        className="absolute z-10 -translate-x-1/2 -translate-y-1/2"
+        style={{ left: "29%", top: "30%" }}
+      >
+        <div className="flex flex-col items-center">
+          <div
+            className="w-9 h-9 lg:w-10 lg:h-10 rounded-full overflow-hidden border-2 border-primary/55 relative z-10"
+            style={{ boxShadow: "0 0 0 4px rgba(139,92,246,0.07), 0 4px 12px rgba(139,92,246,0.14)" }}
+          >
+            <Image
+              src="/images/creators/mapa-2.png"
+              alt="Creator próximo"
+              width={40}
+              height={40}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="w-0 h-0 border-l-[5px] border-l-transparent border-r-[5px] border-r-transparent border-t-[6px] border-t-primary/55 -mt-px relative z-10" />
+        </div>
+      </div>
+
+      {/* 7. Creator secundário 2 — right of center */}
+      <div
+        className="absolute z-10 -translate-x-1/2 -translate-y-1/2"
+        style={{ left: "68%", top: "54%" }}
+      >
+        <div className="flex flex-col items-center">
+          <div
+            className="w-9 h-9 lg:w-10 lg:h-10 rounded-full overflow-hidden border-2 border-primary/55 relative z-10"
+            style={{ boxShadow: "0 0 0 4px rgba(139,92,246,0.07), 0 4px 12px rgba(139,92,246,0.14)" }}
+          >
+            <Image
+              src="/images/creators/mapa-3.png"
+              alt="Creator próximo"
+              width={40}
+              height={40}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="w-0 h-0 border-l-[5px] border-l-transparent border-r-[5px] border-r-transparent border-t-[6px] border-t-primary/55 -mt-px relative z-10" />
+        </div>
+      </div>
+
+      {/* 8. Empresa — marcador discreto, lower-left do cluster */}
+      <div
+        className="absolute z-10 -translate-x-1/2 -translate-y-1/2"
+        style={{ left: "32%", top: "48%" }}
+      >
+        <div className="flex flex-col items-center">
+          <div className="bg-white/95 backdrop-blur-sm rounded-lg border border-border/30 shadow-md px-1.5 py-1 flex items-center gap-1">
+            <Building2 className="w-3 h-3 text-slate-500 flex-shrink-0" strokeWidth={2} />
+            <span className="text-[10px] font-semibold text-slate-600 leading-none">Sua empresa</span>
+          </div>
+          <div className="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-t-[5px] border-t-white -mt-px" style={{ filter: "drop-shadow(0 1px 1px rgba(0,0,0,0.08))" }} />
+        </div>
+      </div>
+
+      {/* 9. Pin simples extra — upper-right, reforça densidade — oculto no mobile */}
+      <div
+        className="absolute z-10 -translate-x-1/2 -translate-y-1/2 hidden lg:block"
+        style={{ left: "65%", top: "27%" }}
+      >
+        <div className="w-5 h-5 rounded-full bg-primary/70 border-2 border-white shadow-md flex items-center justify-center">
+          <div className="w-1.5 h-1.5 rounded-full bg-white" />
+        </div>
+      </div>
+
+      {/* 10. Creator info card */}
       <div className="absolute bottom-3 lg:bottom-4 left-3 lg:left-4 right-3 lg:right-4 z-30">
         <div className="bg-white/95 backdrop-blur-xl rounded-2xl border border-border/20 shadow-xl p-2 lg:p-2.5">
 
