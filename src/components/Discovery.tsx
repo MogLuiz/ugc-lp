@@ -31,7 +31,10 @@ export function Discovery() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="relative p-5 lg:p-8 flex flex-col flex-1">
               <div className="w-11 h-11 lg:w-14 lg:h-14 rounded-[1.1rem] bg-gradient-to-br from-primary/15 to-primary/8 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-500 shadow-sm shadow-primary/10">
-                <Map className="w-5 h-5 lg:w-7 lg:h-7 text-primary" strokeWidth={2.3} />
+                <Map
+                  className="w-5 h-5 lg:w-7 lg:h-7 text-primary"
+                  strokeWidth={2.3}
+                />
               </div>
               <h3 className="text-[1.35rem] font-bold text-foreground mb-2.5 tracking-tight leading-tight">
                 Mapa regional
@@ -56,9 +59,10 @@ export function Discovery() {
               </div>
               {/* Map preview */}
               <div
-                className="mt-auto relative h-20 lg:h-32 rounded-2xl overflow-hidden border border-black/5 bg-center bg-no-repeat"
+                className="mt-auto relative h-32 lg:h-32 rounded-2xl overflow-hidden border border-black/5 bg-center bg-no-repeat"
                 style={{
-                  backgroundImage: "url('/images/creators/map-background-thumb.webp')",
+                  backgroundImage:
+                    "url('/images/creators/map-background-thumb.webp')",
                   backgroundSize: "118% 118%",
                 }}
               >
@@ -82,7 +86,10 @@ export function Discovery() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="relative p-5 lg:p-8 flex flex-col flex-1">
               <div className="w-11 h-11 lg:w-14 lg:h-14 rounded-[1.1rem] bg-gradient-to-br from-primary/15 to-primary/8 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-500 shadow-sm shadow-primary/10">
-                <Grid3x3 className="w-5 h-5 lg:w-7 lg:h-7 text-primary" strokeWidth={2.3} />
+                <Grid3x3
+                  className="w-5 h-5 lg:w-7 lg:h-7 text-primary"
+                  strokeWidth={2.3}
+                />
               </div>
               <h3 className="text-[1.35rem] font-bold text-foreground mb-2.5 tracking-tight leading-tight">
                 Marketplace completo
@@ -156,7 +163,10 @@ export function Discovery() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/3 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             <div className="relative p-5 lg:p-8 flex flex-col flex-1">
               <div className="w-11 h-11 lg:w-14 lg:h-14 rounded-[1.1rem] bg-gradient-to-br from-primary/15 to-primary/8 flex items-center justify-center mb-4 group-hover:scale-105 transition-transform duration-500 shadow-sm shadow-primary/10">
-                <Tag className="w-5 h-5 lg:w-7 lg:h-7 text-primary" strokeWidth={2.3} />
+                <Tag
+                  className="w-5 h-5 lg:w-7 lg:h-7 text-primary"
+                  strokeWidth={2.3}
+                />
               </div>
               <h3 className="text-[1.35rem] font-bold text-foreground mb-2.5 tracking-tight leading-tight">
                 Busca por categoria
